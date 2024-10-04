@@ -3,3 +3,7 @@ h1 {
     color: aqua;
     padding-left: 10px;
 }
+
+body {
+    margin: 1px;
+}
