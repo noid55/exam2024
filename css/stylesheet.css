@@ -1,9 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(255, 213, 0, 255);
+    margin: 0;
+    border: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    height: 10em;
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: bold; 
+}
+
+.studieoversikt{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: 2em;
+    
+  
+}
 h1 {
     font-size: large;
     color: aqua;
     padding-left: 10px;
-}
-
-body {
-    margin: 1px;
 }
