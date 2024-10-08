@@ -1,3 +1,36 @@
 body {
     margin: 0;
 }
+
+.collapsible{
+    justify-content: center;
+    background-color: rgb(194, 187, 187,0.2);
+    display: none;
+  }
+
+.collapsible:target{
+    display: block;
+}
+
+.content-container, .title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px auto;
+    width: 40%;
+    border-radius: 4px;
+}
+
+.title-container{
+    padding: 10px;
+    background-color: rgb(255, 213, 0, 255);
+    text-decoration: none;
+    color: black;
+}
+
+.content-container p{
+    padding: 50px;
+    margin-top: 0;
+    word-spacing: 5px;
+}
