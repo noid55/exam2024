@@ -160,10 +160,12 @@ h1, h2, h3, h4, h5, p, a {
     
 }
 #title {
+    margin-left: 5%;
     font-size: 3em;
 }
 
 #sub_title {
+    margin-left: 5%;
     font-weight: 450;
 }
 
