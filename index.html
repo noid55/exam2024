@@ -3,28 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <header>
-    <nav>
-        <ul class="menu">
-            <li>index</li>
-            <li>Accessibility</li>
-            <li>Github</li>
-            <li>Activity page</li>
-            
-
-        </ul>
-    </nav>
     <div class="topHeader">
-    <a href="index.html" class="logo">Oslo <br>Met</a>
+        <img href="index.html" class="logo" src="/media/logo.png">   
+        
+        <nav class="hamburger">
+            <input id="burger-toggle" type="checkbox">
+            <label class="hamburger-toggle-container" for="burger-toggle">
+                <div class="menu-icon"></div>
+            </label>
+            <ul class="menu">
+                <li>index</li>
+                <li>Accessibility</li>
+                <li>Github</li>
+                <li>Activity page</li>
+            </ul>
+        </nav>
+       
+        
+    
+    
+    <!-- <a href="index.html" class="logo">Oslo <br>Met</a> -->
+     
     </div>
+    <div class="search-container">
+        <form action="/search" method="get">
+          <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+          <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+        </form>
+      </div>
     <div class="bottomHeader"> 
-    <a href="index.html" class="studieoversikt" >Studieoversikt</a>
+    <a href="index.html" class="studieoversikt">Studieoversikt</a>
     </div>
 </header>
 <body>
-<p>Hi</P>
 
+    
+      
 </body>
 
 <footer>
