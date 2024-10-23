@@ -2,6 +2,7 @@
     --main_colour: #ffd500;
     --background_colour: #ffffff;
     --text_colour: #000000;
+    --box_text_background: #f0eded4f;
   }
 
 body {
@@ -234,3 +235,117 @@ h1, h2, h3, h4, h5, p, a {
     }
 }
 
+/* Information boxes */
+
+/* 2 boxes */
+
+#bold {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 0.15em solid #ffd500;
+    
+}
+
+.flex-container_2_boxes{
+    display: flex;
+    justify-content: space-evenly; 
+    margin-bottom: 4em;   
+    font-size: 1.1em;
+}
+.box-wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box1, .box2{
+    background-color: var(--main_colour);
+    width: 18em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+}
+.box1 p, .box2 p{
+    margin: 0;
+}
+
+.content-item1, .content-item2{
+    background-color: var(--box_text_background);
+    width: 26em;
+    height: 20em;
+    padding: 0.8em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.2em;
+}
+.content-item1 p, .content-item2 p {
+    margin: 0 0 1em 0;
+}
+.content-item1 li, .content-item2 li{
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+.content-item1 ul, .content-item2 ul{
+    margin-bottom: 1em;
+    
+}
+
+/* 1 long box */
+
+.container_long_box{
+    display: flex;
+    justify-content: space-evenly; 
+    margin-bottom: 4em;   
+    font-size: 1.1em;
+}
+.long_box{
+    background-color: var(--main_colour);
+    width: 30em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+}
+.long_box p{
+    margin: 0;
+}
+.content-item_long_box{
+    background-color: var(--box_text_background);
+    width: 60em;
+    height: 20em;
+    padding: 0.8em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.2em;
+}
+.content-item_long_box p {
+    margin: 0 0 1em 0;
+}
+
+/* standalone button for further education */
+
+.further_education{
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border:none;
+    background-color: #ffd500;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/*
+.btn:hover{
+  IDK???? 
+
+}*/
