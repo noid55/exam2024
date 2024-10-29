@@ -236,16 +236,6 @@ h1, h2, h3, h4, h5, p, a {
     }
 }
 
-/* Information boxes */
-
-/* 2 boxes */
-
-#bold {
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 0.15em solid #ffd500;
-    
-}
 
 .flex-container_2_boxes{
     display: flex;
@@ -344,9 +334,34 @@ h1, h2, h3, h4, h5, p, a {
     cursor: pointer;
     display: inline-block;
 }
+footer {
+    background-color: var(--main_colour); 
+    /* Matches header background */
+    padding: 1.5em 10%; 
+    /* Matches header padding for left/right */
+    color: var(--text_colour); 
+    /* Matches main text color */
+    text-align: center;
+    font-size: 1em;
+    margin-top: 3em; 
+    /* Adds spacing above the footer */
+}
 
-/*
-.btn:hover{
-  IDK???? 
+footer p {
+    margin: 0.5em 0; 
+    /* Small spacing between footer text */
+    font-weight: 500;
+}
 
-}*/
+footer a {
+    color: var(--text_colour); 
+    /* Matches text color */
+    text-decoration: none; 
+    /* No underline for a clean look */
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    /* Underline on hover for emphasis */
+}
