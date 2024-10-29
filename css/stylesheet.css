@@ -123,6 +123,7 @@ header{
     padding-right: 10%;
     height: 10em;
 }
+
 .topHeader{
     display: flex;
     flex-direction: row;
