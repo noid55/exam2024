@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, p, a {
         height: 600px;
     }
 }
-}
+
 
 .collapsible{
     justify-content: center;
@@ -263,4 +263,35 @@ h1, h2, h3, h4, h5, p, a {
     padding: 50px;
     margin-top: 0;
     word-spacing: 5px;
+}
+footer {
+    background-color: var(--main_colour); 
+    /* Matches header background */
+    padding: 1.5em 10%; 
+    /* Matches header padding for left/right */
+    color: var(--text_colour); 
+    /* Matches main text color */
+    text-align: center;
+    font-size: 1em;
+    margin-top: 3em; 
+    /* Adds spacing above the footer */
+}
+
+footer p {
+    margin: 0.5em 0; 
+    /* Small spacing between footer text */
+    font-weight: 500;
+}
+
+footer a {
+    color: var(--text_colour); 
+    /* Matches text color */
+    text-decoration: none; 
+    /* No underline for a clean look */
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    /* Underline on hover for emphasis */
 }
