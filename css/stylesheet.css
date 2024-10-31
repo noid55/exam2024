@@ -236,6 +236,20 @@ h1, h2, h3, h4, h5, p, a {
     }
 }
 
+/*2 boxes*/
+
+#bold_text{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+#bold_text:hover{
+    border-bottom: 0.15em solid var(--main_colour);
+}
+#bold_title{
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .flex-container_2_boxes{
     display: flex;
@@ -327,13 +341,25 @@ h1, h2, h3, h4, h5, p, a {
 }
 
 .btn {
-    border:none;
     background-color: #ffd500;
-    padding: 14px 28px;
+    border: 0.1em solid black;
+    padding: 18px 32px;
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
+    text-align: center;
+    font-weight:bold;
 }
+.btn:hover{
+    background-color: #ecc501;
+    transform: scale(1.01);
+}
+
+/* footer */
+
+
+/**/
+
 footer {
     background-color: var(--main_colour); 
     /* Matches header background */
