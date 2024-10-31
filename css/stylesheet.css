@@ -238,10 +238,11 @@ h1, h2, h3, h4, h5, p, a {
 
 /*2 boxes*/
 
+
 #bold_text{
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 #bold_text:hover{
     border-bottom: 0.15em solid var(--main_colour);
@@ -277,21 +278,23 @@ h1, h2, h3, h4, h5, p, a {
 
 .content-item1, .content-item2{
     background-color: var(--box_text_background);
-    width: 26em;
-    height: 20em;
+    width: 30em;
+    height: 28em;
     padding: 0.8em;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 0.2em;
+    border: 0.1em solid var(--main_colour);
 }
 .content-item1 p, .content-item2 p {
-    margin: 0 0 1em 0;
+    margin: 0 0 1.3em 0;
 }
 .content-item1 li, .content-item2 li{
     text-align: left;
     margin-bottom: 0.5em;
+    font-size: 1.1em;
 }
 .content-item1 ul, .content-item2 ul{
     margin-bottom: 1em;
@@ -328,6 +331,7 @@ h1, h2, h3, h4, h5, p, a {
     flex-direction: column;
     justify-content: center;
     border-radius: 0.2em;
+    border: 0.1em solid var(--main_colour);
 }
 .content-item_long_box p {
     margin: 0 0 1em 0;
