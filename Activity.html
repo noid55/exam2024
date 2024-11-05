@@ -5,26 +5,17 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <header>
   <div class="topHeader">
     <img href="index.html" class="logo" src="/media/logo.png">
-    
+
     <nav>
-      <!--Yoinked from: https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <p class="menuText">Meny</p>
-        <i class="fas fa-bars"></i>
-      </label>
-      <div class="nav-mobile">
-        <a href="index.html">Home</a>
-        <a href="#">Accesability</a>
-        <a href="#">GitHub</a>
-        <a href="#">Activity</a>
-      </div>
-    </nav>
+      <a class="firstNav selected" href="index.html">Home</a>
+      <a class="secondNav" href="second.html">Accesability</a>
+      <a class="thirdNav" href="third.html">GitHub</a>
+      <a class="fourthNav" href="fourth.html">Activity</a>
+  </nav>
 
     
 
@@ -32,16 +23,19 @@
     <!-- <a href="index.html" class="logo">Oslo <br>Met</a> -->
 
   </div>
-  
+  <div class="search-container">
+    <form action="/search" method="get">
+      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+    </form>
+  </div>
   <div class="bottomHeader">
     <a href="index.html" class="studieoversikt">&lt; -Studieoversikt</a>
-    
   </div>
-  
 </header>
 
 <body>
- 
+
 
 
 
