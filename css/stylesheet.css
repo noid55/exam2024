@@ -180,15 +180,15 @@ h1, h2, h3, h4, h5, p, a {
 /*2 boxes*/
 
 
-#bold_text{
+.bold_text{
     text-decoration: none;
     font-weight: bold;
     font-size: 1em;
 }
-#bold_text:hover{
+.bold_text:hover{
     border-bottom: 0.15em solid var(--main_colour);
 }
-#bold_title{
+.bold_title{
     text-decoration: none;
     font-weight: bold;
 }
@@ -230,7 +230,8 @@ h1, h2, h3, h4, h5, p, a {
     border: 0.1em solid var(--main_colour);
 }
 .content-item1 p, .content-item2 p {
-    margin: 0 0 1.3em 0;
+    margin: 0 0 1.5em 0;
+    line-height: 1.5em;
 }
 .content-item1 li, .content-item2 li{
     text-align: left;
@@ -238,15 +239,17 @@ h1, h2, h3, h4, h5, p, a {
     font-size: 1.1em;
 }
 .content-item1 ul, .content-item2 ul{
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     
 }
+
 
 /* 1 long box */
 
 .container_long_box{
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: center;
+    align-items: center;
     margin-bottom: 4em;   
     font-size: 1.1em;
 }
@@ -265,17 +268,37 @@ h1, h2, h3, h4, h5, p, a {
 .content-item_long_box{
     background-color: var(--box_text_background);
     width: 60em;
-    height: 20em;
+    height: 54em;
     padding: 0.8em;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-radius: 0.2em;
     border: 0.1em solid var(--main_colour);
 }
 .content-item_long_box p {
-    margin: 0 0 1em 0;
+    margin: 0 0 0.5em 0;
+    line-height: 1.5em;
+}
+
+/*Styles for li in long boxes*/
+
+.container_long_box li{
+ 
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    list-style: none;
+}
+.container_long_box ul{
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+.content-item_long_box h4{
+    margin-top: 1em;
 }
 
 /* standalone button for further education */
