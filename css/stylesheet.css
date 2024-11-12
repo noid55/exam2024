@@ -1,382 +1,219 @@
+/* THE VARIABLES */
 :root {
     --main_colour: #ffd500;
     --background_colour: #ffffff;
     --text_colour: #000000;
     --box_text_background: #f0eded4f;
-  }
-
-body {
-    margin: 0;
-    
-}
-
-nav {
-    /* padding: 1.5rem 2rem; */
-    background-color: var(--main_colour);
-    color: #fff;
-    float: right;
-   }
-   .checkbtn {
-    font-size: 1.5rem;
-    color: black;
-    cursor: pointer;
-   }
-   .nav-mobile {
-    display: none;
-    border: solid;
-    border-color: black;
-   }
-
-   #check{
-    display: none;
-  }
-   #check:checked ~ .nav-mobile {
-    display: block;
-    position: absolute;
-    right: 14em;
-    margin-top: 5px;
-   }
-   .nav-mobile {
-    position: absolute;
-    top: 4.5rem;
-    /* left: 0; */
-    background: var(--main_colour);
-    z-index: 1;
-    width: 200px;
-    float: left;
-   }
-   .nav-mobile a {
-    color: black;
-    padding: 1rem 1.5rem;
-    display: block;
-    right: 0;
-   }
-   .menuText{
-    display: inline;
-    font-size: 0.9em;
-    font-weight: bold;
-    color: black;
-   }
-
-header{
-    background-color: var(--main_colour);
-    margin: 0;
-    border: 0;
-    padding-top: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 10em;
-}
-
-.topHeader{
-   
-    margin: 0;
-}
-
-.bottomHeader{
-    display: inline;
 }
 
 
-.logo{
-    
-    text-decoration: none;
-    color: black;
-    font-size: 2em;
-    font-weight: bold; 
-    cursor: pointer;
-}
-
-.studieoversikt{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    position: relative;
-    top: 2em;
-}
-
-h1, h2, h3, h4, h5, p, a {
+/*THE PLATFORM WIDE CHANGES */
+html {
     font-family: Moderat,Avenir,Helvetica,Arial,sans-serif;
-    color: var(--text_colour);
 }
-#promo_video {
-    margin-top: 5%;
-    width: 100%;
-    height: 400px;
-    border-style: none;
-    
+
+/* CHANGINGS THIS WITHOUT A */
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
 }
-#title {
-    margin-left: 5%;
-    padding: 0;
+
+/* SETTING THE FONT/TEXT RULES */
+h1 {
     font-size: 3em;
 }
-
-#sub_title {
-    margin-left: 5%;
-    font-weight: 450;
+/* MEDIA QUERY | PHONE */
+@media (max-width: 800) {
+    h1 {
+        font-size: 2em;
+    }
 }
 
-#heading_section, #heading_info_section {
-    margin: 0 12.5% 0 12.5%;
+
+
+
+main {
+    background-color: var(--background_colour);
 }
 
-.program_info_header {
-    margin-top: 15%;
-    font-size: 1.2em;
-    font-weight: 600;
+body {
+    margin: 0; /* STUPID HTML MARGIN >:( */
+}
+
+/* THE MORE ELEMENT SPECIFIC POINTERS */
+
+/* ------------- */
+/* CONTENT SIZER */
+/* ------------- */
+
+/*
+It makes sure that the content scale well on all platforms
+On phone the width of content sizer can be 98%, but on a widescreeen it will probably be around 1600px.
+The reason to use pixels is that there needs to be a constant size when streching vertically.
+*/
+
+
+/* MEDIA QUERY | PHONE */
+#content_sizer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MEDIA QUERY | LAPTOP SCREEN */
+@media (max-width: 1600px) and (min-width: 801px) {
+    #content_sizer {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* MEDIA QUERY | WIDE SCREEN */
+@media (min-width: 1601px) {
+    #content_sizer {
+        width: 100%;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+header {
+    background-color: var(--main_colour);
+    margin: 0;
+}
+
+#search_bar, #search_bar_button {
+    border-radius: 0;
+    border: 0;
+    margin-left: 0;
+    font-size: larger;
+}
+
+#header_list {
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0;
+    margin-top: 0;
+    height: 60px;
+}
+
+#header_search_bar_list_item {
+    width: 25%;
+    flex-wrap: nowrap;
+}
+@media (min-width: 800) {
+    #header_search_bar_list_item {
+        width: 10%;
+        flex-wrap: nowrap;
+
+    }
+}
+
+
+/* --------------------- */
+/* THE PROMOTIONAL VIDEO */
+/* --------------------- */
+
+
+/* MEDIA QUERY | PHONE */
+#promo_video {
+    margin-top: 3%;
+    width: 100%;
+    height: 200px;
+    background-color: var(--main_colour);
+}
+/* MEDIA QUERY | LAPTOP SCREEN */
+@media (max-width: 1600px) and (min-width: 801px) {
+    #promo_video {
+        width: 100%;
+        height: 540px;
+    }
+}
+/* MEDIA QUERY | WIDE SCREEN */
+@media (min-width: 1601px) {
+    #promo_video {
+        width: 100%;
+        height: 650px;
+    }
+}
+
+/* -------------- */
+/* THE QUICK INFO */
+/* -------------- */
+#quick_info {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* HEADINGS */
+/* MEDIA QUERY | PHONE */
+@media (max-width: 800px) {
+    #sub_heading {
+        font-size: 1.4em;
+        
+    }
+    #heading {
+        font-size: 1.8em;
+    }
+    #sub_sub_heading {
+        font-size: 1.0em;
+    }
+}
+
+/* MEDIA QUERY | LAPTOP SCREEN + WIDE SCREEN*/
+#sub_heading {
+    margin-bottom: 0;
+    font-weight: 300;
+}
+#heading {
+    margin-top: 0;
     margin-bottom: 0;
 }
-
-.program_info_info {
-    margin-top: 0;
-    font-size: 1em;
-    font-weight: 400;
+#sub_sub_heading {
+    margin-top: 1%;
+    font-weight: 100;
 }
 
-.program_info_list_item {
-    border-color: black;
-    border-width: 1px;
-    width: 230px; /*THIS NEEDS TO BE CHANGED TO CA. THE SIZE OF THE WIDEST LIST ITEM ELEMENT */
-    border-width: 1px 0 0 0;
-    border-style: solid;
-    margin: 1%;
-}
-
-#introduction_speech {
-    margin: 5% 30% 5% 30%;
-    font-size: 1.6em;
-}
-
-.program_info_list {
+/* EXTRA INFO */
+#program_info_list {
+    margin-top: 10%;
     display: flex;
     
     list-style: none;
     flex-wrap: wrap; 
     flex-direction: row;
+    justify-content: center;
 
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
     
     border-style: outset;
     border-width: 0 0 1px 0;
     border-color: rgba(0, 0, 0, 0.154);
+}
+.program_info_list_item {
+    border-color: black;
+    border-width: 1px;
+    width: 400px; /*THIS NEEDS TO BE CHANGED TO CA. THE SIZE OF THE WIDEST LIST ITEM ELEMENT */
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    margin: 1%;
 
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    font-size: 1.2em;
 
 }
-
-/*PHONE SCREEN*/
-@media only screen and (max-width: 768px) {
-    #promo_video {
-        height: 300px;
-    }
-}
-
-/*LAPTOP*/
-@media only screen and (min-width: 769px) {
-    #promo_video {
-        height: 600px;
-    }
-}
-
-/*2 boxes*/
-
-
-#bold_text{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-}
-#bold_text:hover{
-    border-bottom: 0.15em solid var(--main_colour);
-}
-#bold_title{
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.flex-container_2_boxes{
-    display: flex;
-    justify-content: space-evenly; 
-    margin-bottom: 4em;   
-    font-size: 1.1em;
-}
-.box-wraper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.box1, .box2{
-    background-color: var(--main_colour);
-    width: 18em;
-    height: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.2em;
-}
-.box1 p, .box2 p{
-    margin: 0;
-}
-
-.content-item1, .content-item2{
-    background-color: var(--box_text_background);
-    width: 30em;
-    height: 28em;
-    padding: 0.8em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 0.2em;
-    border: 0.1em solid var(--main_colour);
-}
-.content-item1 p, .content-item2 p {
-    margin: 0 0 1.3em 0;
-}
-.content-item1 li, .content-item2 li{
-    text-align: left;
-    margin-bottom: 0.5em;
-    font-size: 1.1em;
-}
-.content-item1 ul, .content-item2 ul{
-    margin-bottom: 1em;
-    
-}
-
-/* 1 long box */
-
-.container_long_box{
-    display: flex;
-    justify-content: space-evenly; 
-    margin-bottom: 4em;   
-    font-size: 1.1em;
-}
-.long_box{
-    background-color: var(--main_colour);
-    width: 30em;
-    height: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.2em;
-}
-.long_box p{
-    margin: 0;
-}
-.content-item_long_box{
-    background-color: var(--box_text_background);
-    width: 60em;
-    height: 20em;
-    padding: 0.8em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 0.2em;
-    border: 0.1em solid var(--main_colour);
-}
-.content-item_long_box p {
-    margin: 0 0 1em 0;
-}
-
-/* standalone button for further education */
-
-.further_education{
-    display: flex;
-    justify-content: center;
-}
-
-.btn {
-    background-color: #ffd500;
-    border: 0.1em solid black;
-    padding: 18px 32px;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    font-weight:bold;
-}
-.btn:hover{
-    background-color: #ecc501;
-    transform: scale(1.01);
-}
-
-/* footer */
-
-
-/**/
-
-footer {
-    background-color: var(--main_colour); 
-    padding: 1.5em 10%; 
-    color: var(--text_colour); 
-    text-align: center;
-    font-size: 1em;
-    margin-top: 3em; 
-}
-
-footer p {
-    margin: 0.5em 0; 
-    font-weight: 500;
-}
-
-footer a {
-    color: var(--text_colour); 
-    text-decoration: none; 
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline; 
-    /* Underline on hover for emphasis */
-}
-
-/* Remove bullets and reset list styling */
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Keep list items stacked vertically */
-.footer-section ul li {
-    margin-bottom: 8px; 
-}
-
-/* Footer container styling */
-.footer-container {
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #ffd500;
-    color: black; 
-}
-
-/* Header styling for each footer section */
-.footer-section h3 {
-    color: black; 
-    margin-bottom: 10px;
-}
-
-/* Footer link styling */
-.footer-section ul li a {
-    color: black; 
-    text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    /* Denne burde kanskje fikses opp i, elementene blir usynlig når du hoverer*/
-    color: #FFD700; /* Changed color on hover for visibility */
-}
-
-/* Footer bottom section styling */
-.footer-bottom {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffd500;
-    color: black; 
-}
-
-  
