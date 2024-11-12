@@ -2,8 +2,15 @@ console.log("Hello World!")
 console.log(document.getElementById("heading"))
 
 
-
-
+// https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+function toggle_aside_visibility() {
+    var aside = document.getElementById("aside")
+    if (aside.style.display === "none") {
+        aside.style.display = "flex";
+    } else {
+        aside.style.display = "none"
+    }
+}
 
 // 
 function search() {

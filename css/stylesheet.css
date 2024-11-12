@@ -32,8 +32,11 @@ h1 {
     }
 }
 
-
-
+/* CURSOR gotten from https://www.tutorialrepublic.com/faq/how-to-change-the-cursor-into-a-hand-pointer-on-hover-using-css.php*/
+/* Makes it easier for the user to distinguish what is clickable and not */
+button {
+    cursor:pointer;
+}
 
 main {
     background-color: var(--background_colour);
@@ -51,7 +54,7 @@ body {
 
 /*
 It makes sure that the content scale well on all platforms
-On phone the width of content sizer can be 98%, but on a widescreeen it will probably be around 1600px.
+On phone the width of content sizer can be XX%, but on a widescreeen it will probably be around XXXXpx.
 The reason to use pixels is that there needs to be a constant size when streching vertically.
 */
 
@@ -87,7 +90,11 @@ The reason to use pixels is that there needs to be a constant size when strechin
 /* HEADER */
 /* ------ */
 
+
 header {
+    z-index: 9; /* The <video> has a higher index than the default header*/
+    position: absolute;
+    width: 100%;
     background-color: var(--main_colour);
     margin: 0;
 }
@@ -121,6 +128,11 @@ header {
     }
 }
 
+#hamburger_menu_button {
+    border: 0;
+    background-color: var(--main_colour);
+}
+
 
 /* --------------------- */
 /* THE PROMOTIONAL VIDEO */
@@ -129,7 +141,7 @@ header {
 
 /* MEDIA QUERY | PHONE */
 #promo_video {
-    margin-top: 3%;
+    margin-top: 100px;
     width: 100%;
     height: 200px;
     background-color: var(--main_colour);
@@ -216,4 +228,42 @@ header {
     border-width: 1px 0 0 0;
     font-size: 1.2em;
 
+}
+
+/* ----- */
+/* ASIDE */
+/* ----- */
+
+aside {
+    position: absolute;
+    top: 7.5%;
+    width: 100%;
+    z-index: 9;
+    display: none;
+    flex-direction: column;
+    background-color: var(--main_colour);
+    padding: 0;
+    align-items: center;
+    font-size: 2em;
+    height: 100%;
+}
+
+.aside_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1em;
+    
+}
+
+.aside_menu_bulletpoints {
+    color: var(--text_colour);
+    text-decoration: none;
+}
+.aside_menu_bulletpoints:hover {
+    /* background-color: rgba(255, 255, 255, 0.555); */
+    font-weight: 600;
 }

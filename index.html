@@ -6,7 +6,7 @@
   <title>OsloMET - Matematisk modellering og datavitenskap – ingeniør</title>
   <link rel="shortcut icon" href="media/favico.png" type="image/x-icon">
   <link rel="stylesheet" href="css/stylesheet.css">
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 
@@ -40,53 +40,75 @@
       <!-- SEARCH BAR -->
       <li id="header_search_bar_list_item">
         <input type="search" id="search_bar" placeholder="Søk...">
-        <button onclick="search()" id="search_bar_button">
+        <!-- <button onclick="search()" id="search_bar_button">
           Søk
-        </button>
+        </button> -->
       </li>
 
       <!-- HAMBURGER MENU -->
       <li id="header_hamburger_menu_list_item">
-        <img src="media/burger.svg" alt="">
+        <button id="hamburger_menu_button"><img src="media/burger.svg" alt="" onclick="toggle_aside_visibility()"></button>
       </li>
     </ul>
   </header>
 
 
-    <main>
-      <video src="media/video_hd.mp4" id="promo_video" controls poster="media/logo.png"></video>
-      <section id="content_sizer">
-        <!-- <iframe src="media/video_hd.mp4" frameborder="0" id="promo_video" sandbox></iframe> -->
-        <article id="quick_info">
-          <h2 id="sub_heading">Bachelorprogram i...</h2>
-          <h1 id="heading">Matematisk modellering og datavitenskap – ingeniør</h1>
-          <h3 id="sub_sub_heading">3 år | Heltid | 180 Studiepoeng</h3>
-          <ul id="program_info_list">
-      
-            <!-- STUDIESTED -->
-            <li class="program_info_list_item">
-              <h3 class="program_info_header">Studiested</h3>
-              <p class="program_info_info">Pilestredet i Oslo</p>
-            </li>
-            <!-- UNDERVISNINGSSPRÅK -->
-            <li class="program_info_list_item">
-              <h3 class="program_info_header">Undervisningsspråk</h3>
-              <p class="program_info_info">Norsk + Engelsk</p>
-            </li>
-            <!-- STUDIESTART -->
-            <li class="program_info_list_item">
-              <h3 class="program_info_header">Studiestart</h3>
-              <p class="program_info_info">August</p>
-            </li>
-            <!-- STUDIEPLASSER -->
-            <li class="program_info_list_item">
-              <h3 class="program_info_header">Studieplasser</h3>
-              <p class="program_info_info">400</p>
-            </li>
-          </ul>
-        </section>
+  <aside id="aside">
+    <!-- HERE IS THE STUFF WE CREATED -->
+    <h3>Prosjekt relatert</h3>
+    <ul class="aside_menu">
+      <li><a href="#Home" class="aside_menu_bulletpoints">🏡Hjemmeside🏡</a></li>
+      <li><a href="#Github" class="aside_menu_bulletpoints">🔨GitHub🔨</a></li>
+      <li><a href="#Accesibility" class="aside_menu_bulletpoints">♿Tilgjengelighet♿</a></li>
+      <li><a href="#Home" class="aside_menu_bulletpoints">✨Aktivitetsnettsiden✨</a></li>
+    </ul>
+    <!-- HERE IS THE OSLOMET LINKS -->
+    <h3>OsloMET saker</h3>
+    <ul class="aside_menu">
+      <li><a href="https://www.oslomet.no/studier" class="aside_menu_bulletpoints">Studier</a></li>
+      <li><a href="https://www.oslomet.no/forskning" class="aside_menu_bulletpoints">Forskningen vår</a></li>
+      <li><a href="https://www.oslomet.no/om/samarbeid" class="aside_menu_bulletpoints">Samarbeid</a></li>
+      <li><a href="https://www.oslomet.no/ub" class="aside_menu_bulletpoints">Universitetsbiblioteket</a></li>
+      <li><a href="https://www.oslomet.no/om/kontakt" class="aside_menu_bulletpoints">Kontakt</a></li>
+      <li><a href="https://www.oslomet.no/om/for-studenter" class="aside_menu_bulletpoints">For studenter</a></li>
+    </ul>
+  </aside>
 
-    </main>
+  <main>
+    <video src="media/video_hd.mp4" id="promo_video" controls></video>
+    <section id="content_sizer">
+      <!-- <iframe src="media/video_hd.mp4" frameborder="0" id="promo_video" sandbox></iframe> -->
+      <article id="quick_info">
+        <h2 id="sub_heading">Bachelorprogram i...</h2>
+        <h1 id="heading">Matematisk modellering og datavitenskap – ingeniør</h1>
+        <h3 id="sub_sub_heading">3 år | Heltid | 180 Studiepoeng</h3>
+        <ul id="program_info_list">
+    
+          <!-- STUDIESTED -->
+          <li class="program_info_list_item">
+            <h3 class="program_info_header">Studiested</h3>
+            <p class="program_info_info">Pilestredet i Oslo</p>
+          </li>
+          <!-- UNDERVISNINGSSPRÅK -->
+          <li class="program_info_list_item">
+            <h3 class="program_info_header">Undervisningsspråk</h3>
+            <p class="program_info_info">Norsk + Engelsk</p>
+          </li>
+          <!-- STUDIESTART -->
+          <li class="program_info_list_item">
+            <h3 class="program_info_header">Studiestart</h3>
+            <p class="program_info_info">August</p>
+          </li>
+          <!-- STUDIEPLASSER -->
+          <li class="program_info_list_item">
+            <h3 class="program_info_header">Studieplasser</h3>
+            <p class="program_info_info">400</p>
+          </li>
+        </ul>
+      </section>
+
+  </main>
+    
   </section>
 </body>
 </html>
