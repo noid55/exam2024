@@ -105,6 +105,15 @@ header {
     margin-left: 0;
     font-size: larger;
 }
+#search_bar {
+    display: inline-block;
+    width: 100%;
+}
+@media (max-width: 800) {
+    #search_bar {
+        width: 30%;
+    }
+}
 
 #header_list {
     width: 100%;
@@ -114,19 +123,9 @@ header {
     padding: 0;
     margin-top: 0;
     height: 60px;
-}
-
-#header_search_bar_list_item {
-    width: 25%;
     flex-wrap: nowrap;
 }
-@media (min-width: 800) {
-    #header_search_bar_list_item {
-        width: 10%;
-        flex-wrap: nowrap;
 
-    }
-}
 
 #hamburger_menu_button {
     border: 0;
@@ -266,5 +265,5 @@ aside {
 }
 .aside_menu_bulletpoints:hover {
     /* background-color: rgba(255, 255, 255, 0.555); */
-    font-weight: 600;
+    font-weight: 550;
 }
