@@ -379,4 +379,31 @@ footer a:hover {
     color: black; 
 }
 
-  
+.testP{
+    width: 100%;
+}
+.githubCommit{
+    margin-left: 2em;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 5em;
+}
+.h1Github{
+    text-align: center;
+}
+.h2Github{
+    text-align: center;
+}
+.pGithub{
+    margin: 3em;
+}
+
+
+.githubFirstPicture{
+    width: 600px;
+}
+.githubSecondPicture{
+    width: 600px;
+}
