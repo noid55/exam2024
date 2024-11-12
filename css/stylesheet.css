@@ -23,6 +23,8 @@ nav {
    }
    .nav-mobile {
     display: none;
+    border: solid;
+    border-color: black;
    }
 
    #check{
@@ -30,11 +32,14 @@ nav {
   }
    #check:checked ~ .nav-mobile {
     display: block;
+    position: absolute;
+    right: 14em;
+    margin-top: 5px;
    }
    .nav-mobile {
-    /* position: absolute; */
+    position: absolute;
     top: 4.5rem;
-    left: 0;
+    /* left: 0; */
     background: var(--main_colour);
     z-index: 1;
     width: 200px;
@@ -44,6 +49,7 @@ nav {
     color: black;
     padding: 1rem 1.5rem;
     display: block;
+    right: 0;
    }
    .menuText{
     display: inline;
@@ -78,6 +84,7 @@ header{
     color: black;
     font-size: 2em;
     font-weight: bold; 
+    cursor: pointer;
 }
 
 .studieoversikt{
@@ -87,11 +94,6 @@ header{
     position: relative;
     top: 2em;
 }
-h1 {
-    font-size: large;
-    padding-left: 10px;
-}
-
 
 h1, h2, h3, h4, h5, p, a {
     font-family: Moderat,Avenir,Helvetica,Arial,sans-serif;
@@ -106,6 +108,7 @@ h1, h2, h3, h4, h5, p, a {
 }
 #title {
     margin-left: 5%;
+    padding: 0;
     font-size: 3em;
 }
 
@@ -364,6 +367,7 @@ footer a:hover {
 }
 
 .footer-section ul li a:hover {
+    /* Denne burde kanskje fikses opp i, elementene blir usynlig når du hoverer*/
     color: #FFD700; /* Changed color on hover for visibility */
 }
 
