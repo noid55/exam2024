@@ -188,10 +188,6 @@ h1, h2, h3, h4, h5, p, a {
 .bold_text:hover{
     border-bottom: 0.15em solid var(--main_colour);
 }
-.bold_title{
-    text-decoration: none;
-    font-weight: bold;
-}
 
 .flex-container_2_boxes{
     display: flex;
@@ -206,7 +202,7 @@ h1, h2, h3, h4, h5, p, a {
 }
 .box1, .box2{
     background-color: var(--main_colour);
-    width: 18em;
+    width: 20em;
     height: 4em;
     display: flex;
     justify-content: center;
@@ -299,6 +295,86 @@ h1, h2, h3, h4, h5, p, a {
 
 .content-item_long_box h4{
     margin-top: 1em;
+}
+
+/* Layout for syllabus */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-column-gap: 10px; 
+    width: 100%;
+    height: 100%; 
+}
+
+.box {
+    display: flex; 
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: flex-start; /* Start stacking items from the top */
+    padding: 1em; /* Add spacing inside the box */
+    color: white; /* Ensure the text is readable */
+    border-radius: 0.5em; /* Optional: Smooth corners for better design */
+}
+
+.red {
+    background-color: rgb(255, 0, 0,0.6);
+}
+
+.green {
+    background-color: rgb(1, 129, 1,0.7);
+}
+
+.blue {
+    background-color: rgb(0, 0, 255,0.7);
+}
+.box h4 {
+    text-align: center; 
+}
+.box h5, .box p{
+    margin: 2em 0; 
+    text-align: left; 
+
+}
+
+.box p{
+    font-size: 0.8em;
+}
+
+/* Syllabus boxes with course name, course code and points */
+
+.syllabus-box{
+    border-top: 0.15em solid black;
+    background-color: #ffd50086;
+    margin-top: 0.5em;
+    color: black;
+}
+
+.bold-text-syllabus{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.bold-text-syllabus:hover{
+    border-bottom: 0.15em solid var(--main_colour);
+}
+
+.syllabus-box .top-course-name {
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 0.8em;
+    width: 100%;
+}
+.syllabus-box .middle {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between; 
+
+}
+.syllabus-box .middle .course-code{
+    text-align: left;
+}
+.syllabus-box .middle .points{
+    text-align: right;
 }
 
 /* standalone button for further education */
