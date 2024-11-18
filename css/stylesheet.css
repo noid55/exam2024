@@ -263,8 +263,8 @@ h1, h2, h3, h4, h5, p, a {
 }
 .content-item_long_box{
     background-color: var(--box_text_background);
-    width: 60em;
-    height: 160em;
+    width: auto;
+    height: auto;
     padding: 0.8em;
     text-align: center;
     display: flex;
@@ -275,7 +275,6 @@ h1, h2, h3, h4, h5, p, a {
     border: 0.1em solid var(--main_colour);
 }
 .content-item_long_box p {
-    margin: 0 0 0.5em 0;
     line-height: 1.5em;
 }
 
@@ -329,9 +328,61 @@ h1, h2, h3, h4, h5, p, a {
 
 }
 
-.box p{
-    font-size: 0.8em;
+/*.box p{
+    font-size: 2.8em;
+}*/
+
+/* legend (color marking) for every syllabus */
+#legend{
+    text-align: left;
 }
+.color-code{
+    color: black;
+    font-size: 0.9em;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+.color-stripe-side::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0.7em;
+}
+
+/*look inside #legend parent and find all children with color-code class and add styles */
+#legend .color-code:nth-child(1) .color-stripe-side::before{
+    background-color: rgb(0, 3, 182);
+}
+#legend .color-code:nth-child(2) .color-stripe-side::before{
+    background-color: rgb(255, 0, 0);
+}
+#legend .color-code:nth-child(3) .color-stripe-side::before{
+    background-color: rgb(0, 3, 182);
+}
+#legend .color-code:nth-child(4) .color-stripe-side::before{
+    background-color: rgb(255, 0, 0);
+}
+#legend .color-code:nth-child(5) .color-stripe-side::before{
+    background-color: rgb(105, 68, 0);
+}
+#legend .color-code:nth-child(3) .color-stripe-side::before, #legend .color-code:nth-child(4) .color-stripe-side::before{
+    top:0;
+    height: 50%;
+}
+#legend .color-code:nth-child(3) .color-stripe-side::after, #legend .color-code:nth-child(4) .color-stripe-side::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50%;
+    width: 0.7em;
+}
+#legend .color-code:nth-child(3) .color-stripe-side::after, #legend .color-code:nth-child(4) .color-stripe-side::after{
+    background-color: green;
+}
+
 
 /* Syllabus boxes with course name, course code and points */
 
@@ -352,11 +403,11 @@ h1, h2, h3, h4, h5, p, a {
     height: 100%;
     width: 0.5em; 
 }
-.syllabus-box-oblig-2-half::before, .syllabus-box-oblig-2-half-extra-sub::before{
-    background-color: rgb(255, 0, 0); 
-}
 .syllabus-box-oblig-1-half::before, .syllabus-box-oblig-1-half-extra-sub::before{
     background-color: rgb(0, 3, 182);
+}
+.syllabus-box-oblig-2-half::before, .syllabus-box-oblig-2-half-extra-sub::before{
+    background-color: rgb(255, 0, 0); 
 }
 .syllabus-box-oblig-1-half-extra-sub::before, .syllabus-box-oblig-2-half-extra-sub::before{
     top:0;
@@ -382,8 +433,14 @@ h1, h2, h3, h4, h5, p, a {
     font-size: 0.8em;
     padding: 0.2em;
 }
-.bold-text-syllabus:hover{
-    border-bottom: 0.15em solid red;
+.syllabus-box-oblig-1-half .bold-text-syllabus:hover{
+    border-bottom: 0.15em solid rgb(0, 3, 182);
+}
+.syllabus-box-oblig-2-half .bold-text-syllabus:hover{
+    border-bottom: 0.15em solid rgb(255, 0, 0);
+}
+.syllabus-box-oblig-1-half-extra-sub .bold-text-syllabus:hover , .syllabus-box-oblig-2-half-extra-sub .bold-text-syllabus:hover{
+    border-bottom: 0.15em solid green;
 }
 
 .syllabus-box-oblig-1-half .top-course-name, .syllabus-box-oblig-2-half .top-course-name,
