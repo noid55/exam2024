@@ -303,16 +303,17 @@ h1, h2, h3, h4, h5, p, a {
     grid-template-columns: repeat(3, 1fr); 
     grid-column-gap: 10px; 
     width: 100%;
-    height: 100%; 
+    height: auto; 
 }
 
 .box {
     display: flex; 
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: flex-start; /* Start stacking items from the top */
-    padding: 1em; /* Add spacing inside the box */
-    color: white; /* Ensure the text is readable */
-    border-radius: 0.5em; /* Optional: Smooth corners for better design */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    padding: 1em; 
+    margin: 0.5em;
+    color: white; 
+    border-radius: 0.5em; 
 }
 
 .year1, .year2, .year3 {
@@ -365,7 +366,7 @@ h1, h2, h3, h4, h5, p, a {
     background-color: rgb(255, 0, 0);
 }
 #legend .color-code:nth-child(5) .color-stripe-side::before{
-    background-color: rgb(105, 68, 0);
+    background-color: rgb(236, 154, 0);
 }
 #legend .color-code:nth-child(3) .color-stripe-side::before, #legend .color-code:nth-child(4) .color-stripe-side::before{
     top:0;
@@ -489,6 +490,37 @@ h1, h2, h3, h4, h5, p, a {
 .btn:hover{
     background-color: #ecc501;
     transform: scale(1.01);
+}
+
+/*Media querry*/
+
+@media (max-width: 1200px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .box {
+        margin: 1em;
+    }
+}
+
+/* Mobile Screen  */
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr; 
+    }
+
+    .box {
+        padding: 0.5em;
+    }
+
+    #legend {
+        font-size: 0.8em; 
+    }
+
+    .bold-text-syllabus {
+        font-size: 0.7em; 
+    }
 }
 
 /* footer */
