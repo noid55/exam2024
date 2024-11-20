@@ -407,3 +407,29 @@ footer a:hover {
 .githubSecondPicture{
     width: 600px;
 }
+
+/* Activity page specials */
+#article-heading-image {
+    width: 100%;
+}
+
+/* Controls the width of all reading content on the pages */
+/* PHONE */
+.width-controller {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+/* LAPTOP */
+@media (min-width: 600px) and (max-width: 1599px) {
+    .width-controller {
+        width: 80%;
+    }
+}
+/* WIDE-SCREEN */
+@media (min-width: 1600px) {
+    .width-controller {
+        width: 1200px;
+    }
+}

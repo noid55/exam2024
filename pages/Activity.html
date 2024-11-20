@@ -3,291 +3,86 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="../css/stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Need this stylesheet for hamburger menu, no clue how it works or what it does maybe figure that out-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <header>
   <div class="topHeader">
-    <img href="index.html" class="logo" src="/media/logo.png">
+    <img href="../index.html" class="logo" src="../media/logo.png">
 
     <nav>
-      <a class="firstNav selected" href="index.html">Home</a>
-      <a class="secondNav" href="second.html">Accesability</a>
-      <a class="thirdNav" href="third.html">GitHub</a>
-      <a class="fourthNav" href="fourth.html">Activity</a>
-  </nav>
+      <!--Yoinked from: https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <p class="menuText">Meny</p>
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="nav-mobile">
+        <a href="../index.html">Home</a>
+        <a href="#">Accesability</a>
+        <a href="github.html">GitHub</a>
+        <a href="#">Activity</a>
+      </div>
+    </nav>
 
-    
+
 
 
     <!-- <a href="index.html" class="logo">Oslo <br>Met</a> -->
 
   </div>
-  <div class="search-container">
-    <form action="/search" method="get">
-      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
-      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
-    </form>
-  </div>
+
   <div class="bottomHeader">
-    <a href="index.html" class="studieoversikt">&lt; -Studieoversikt</a>
+    <a href="index.html" class="studieoversikt">&lt; Studieoversikt</a>
+
   </div>
+
 </header>
 
 <body>
-
-
-
-
-  <section>
-    <iframe src="media/video_hd.mp4" frameborder="0" id="promo_video"></iframe>
-    <h1 id="title">Matematisk modellering og datavitenskap – ingeniør</h1>
-    <h2 id="sub_title">Bachelorprogram</h2>
+  <section class="width-controller">
+    <img src="../media/activitypage_minecraft_screenshot1.png" alt="A screenshot of a modified version of Minecraft" id="article-heading-image">
+    <h1>How to modify Minecraft: The modern way</h1>
+    <p>In this article you'll learn how to mod(ify) <a href="https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-2">Minecraft Java Edition 1.21.2</a> with some simple steps.</p>
+    <h2>The different options</h2>
+    <p>There are a few different methods to mod minecraft including <a href="https://files.minecraftforge.net/net/minecraftforge/forge/">CurseForge</a> and <a href="https://www.feed-the-beast.com/">FTB</a>, but the most modern method is using <a href="https://modrinth.com/">Modrinth</a></p>
+    <p>Modrinth was originally just a place to upload and share mods, but recently moved into actually installing the mods to Minecraft. Users of Modrinth expect from them</p>
   </section>
-
-  <!--
-    
-    The structure here on a normal pc screen should look like this
-
-    -------------------------------------------------
-    | List item | List item | List item | List item |
-    -------------------------------------------------
-    | List item | List item | List item |
-    -------------------------------------
-
-    But on phone, may look more like this
-
-    -------------------------
-    | List item | List item |
-    -------------------------
-    | List item | List item |
-    -------------------------
-    | List item | List item |
-    -------------------------
-    | List item |
-    -------------
-
-    -->
-  <section id="heading_info">
-    <ul class="program_info_list">
-      <!--
-            A list item here should look like this
-    
-            <ol class="program_info_list_item">
-                <h1 class="program_info_header"> INFO HEADER HERE </h1>
-                <h2 class="program_info_info"> INFO HERE </h2>
-            </ol>
-    
-            -->
-
-      <!-- STUDIESTED -->
-      <li class="program_info_list_item">
-        <h1 class="program_info_header">Studiested</h1>
-        <h2 class="program_info_info">Pilestredet i Oslo</h2>
-      </li>
-      <!-- VARIGHET -->
-      <li class="program_info_list_item">
-        <h1 class="program_info_header">Varighet</h1>
-        <h2 class="program_info_info">3 år</h2>
-      </li>
-      <!-- OMFANG -->
-      <li class="program_info_list_item">
-        <h1 class="program_info_header">Omfang</h1>
-        <h2 class="program_info_info">Heltid</h2>
-      </li>
-      <!-- STUDIEPOENG -->
-      <li class="program_info_list_item">
-        <h1 class="program_info_header">Studiepoeng</h1>
-        <h2 class="program_info_info">180</h2>
-      </li>
-      <!-- VARIGHET -->
-      <li class="program_info_list_item">
-        <h1 class="program_info_header">Varighet</h1>
-        <h2 class="program_info_info">3 år</h2>
-      </li>
-      <!-- SPRÅK -->
-      <li class="program_info_list_item">
-        <h1 class="program_info_header">Undervisningsspråk</h1>
-        <h2 class="program_info_info">Norsk + Engelsk</h2>
-      </li>
-      <!-- STUDIEPOENG-->
-      <li class="program_info_list_item">
-        <h1 class="program_info_header">Studiepoeng</h1>
-        <h2 class="program_info_info">180</h2>
-      </li>
-    </ul>
-
-    <p id="introduction_speech">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
-      samfunnsnyttige oppgaver.</p>
-  </section>
-
-  <!-- THE GREAT BARRIER!!!  ---------------------------------------------------------  -->
-
-  <section>
-
-    <!--2 boxes-->
-
-    <div class="flex-container_2_boxes">
-
-      <div class="box-wraper">
-
-        <div class="box1">
-          <p id="bold_title">Opptakskrav og poeng</p>
-        </div>
-        <div class="content-item1">
-          <p>For å søke på dette programmet må du ha:</p>
-
-          <ul>
-            <li><a id="bold_text" href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/">generell studiekompetanse (samordnaopptak.no)</a> eller <a id="bold_text" href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior">oppfylle kravene til realkompetanse</a></li>
-            <li>matematikk R1 og R2</li>
-            <li>fysikk 1</li>
-          </ul>
-
-          <p>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</p>
-          <p>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole,
-            kan du søke på dette studiet om du har <a id="bold_text" href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">bestått ettårig forkurs for ingeniørutdanning.</a></p>
-        </div>
-      </div>
-
-      <div class="box-wraper">
-
-        <div class="box2">
-          <p id="bold_title">Slik søker du</p>
-        </div>
-        <div class="content-item2">
-          <p>Du søker på Samordna opptak med studiekode 215 503.</p>
-          <ul>
-            <li>15. april: ordinær søknadsfrist</li>
-            <li>1. mars: frist for enkelte søkere</li>
-          </ul>
-          <p><a id="bold_text" href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier">Mer om å søke på bachelor.</a></p>
-        </div>
-      </div>
-    </div>
-
-    <!--1 long box-->
-
-
-    <div class="container_long_box">
-      <div class="box-wraper">
-
-        <div class="long_box">
-          <p id="bold_title">Opptakskrav og poeng</p>
-        </div>
-        <div class="content-item_long_box">
-          <p>For å søke på dette programmet må du ha:</p>
-        </div>
-      </div>
-    </div>
-
-    <!--1 long box-->
-
-    <div class="container_long_box">
-      <div class="box-wraper">
-
-        <div class="long_box">
-          <p id="bold_title">Studiets oppbygging</p>
-        </div>
-        <div class="content-item_long_box">
-          <p>For å søke på dette programmet må du ha:</p>
-        </div>
-      </div>
-    </div>
-
-    <!--2 boxes-->
-
-    <div class="flex-container_2_boxes">
-
-      <div class="box-wraper">
-
-        <div class="box1">
-          <p id="bold_title">Hvordan foregår undervisningen? </p>
-        </div>
-        <div class="content-item1">
-              <!--content-->
-        </div>
-      </div>
-
-      <div class="box-wraper">
-
-        <div class="box2">
-          <p id="bold_title">Hva koster det?</p>
-        </div>
-        <div class="content-item2">
-              <!--content-->
-        </div>
-      </div>
-    </div>
-
-    <!--2 boxes-->
-
-    <div class="flex-container_2_boxes">
-
-      <div class="box-wraper">
-
-        <div class="box1">
-          <p id="bold_title">Hva kan du jobbe som?</p>
-        </div>
-        <div class="content-item1">
-              <!--content-->
-        </div>
-      </div>
-
-      <div class="box-wraper">
-
-        <div class="box2">
-          <p id="bold_title">Utveksling</p>
-        </div>
-        <div class="content-item2">
-              <!--content-->
-        </div>
-      </div>
-    </div>
-
-    <div class="further_education">
-      <button class="btn">
-        Anvendt data- og informasjonsteknologi (ACIT)
-        Masterprogram | 2 år | Pilestredet i Oslo | Heltid!!
-      </button>
-    </div>
-
-
-    
-
-
-  </section>
-
 </body>
 
-<footer>
-
+<footer role="contentinfo">
   <div class="footer-container">
     <!-- Contact Information -->
     <div class="footer-section contact-info">
-      <h3>Contact Us</h3>
-      <p>OsloMet University</p>
-      <p>Phone: +47 123 45 678</p>
-      <p>Email: info@oslomet.no</p>
+      <h3>Kontakt oss</h3>
+      <address>
+        <p>OsloMet University</p>
+        <p>Telefon: <a href="tel:+4712345678">+47 123 45 678</a></p>
+        <p>E-post: <a href="mailto:info@oslomet.no">info@oslomet.no</a></p>
+      </address>
     </div>
 
     <!-- Quick Links -->
     <div class="footer-section quick-links">
-      <h3>Quick Links</h3>
+      <h3>Raske lenker</h3>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Hjem</a></li>
         <li><a href="#heading_info">Program Info</a></li>
-        <li><a href="#promo_video">Watch Video</a></li>
+        <li><a href="#promo_video">Se video</a></li>
         <li><a href="https://www.github.com/">GitHub</a></li>
       </ul>
     </div>
 
     <!-- Social Media Links -->
     <div class="footer-section social-media">
-      <h3>Follow Us</h3>
+      <h3>Følg oss</h3>
       <ul>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://www.twitter.com/">Twitter</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook">Facebook</a></li>
+        <li><a href="https://www.twitter.com/" aria-label="Følg oss på Twitter">Twitter</a></li>
+        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instagram">Instagram</a></li>
       </ul>
     </div>
   </div>
@@ -298,5 +93,6 @@
 
 
 </footer>
+
 
 </html>
