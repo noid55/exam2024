@@ -297,6 +297,7 @@ a {
     width: auto;
     height: auto;
     padding: 0.8em;
+    margin: 0 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -593,8 +594,10 @@ a {
 
     .section-content {
         padding: 0 1em;
-        margin: 1em;
+        margin: 0 1em; /* HUSK Å GJØRE SAMME PÅ 2 BOXES  */
     }
+
+
 
     .study-years {
         display: flex;
@@ -639,7 +642,10 @@ a {
 /* Mobile Screen (Phones) */
 @media (max-width: 768px) {
     
-    
+    .topHeader{
+        width: 100%;
+    }
+
     .container-long-box {
         margin: 1em;
     }
@@ -655,6 +661,7 @@ a {
 
     .section-content {
         font-size: 1em;
+        margin: 0 1em;
         padding: 0 1em; /*  ensure no overflow */
         box-sizing: border-box; /*  padding is included in the width it prevents overflow*/
     }
