@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/stylesheet.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1st">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1st/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Need this stylesheet for hamburger menu, no clue how it works or what it does maybe figure that out-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <header>
   <div class="topHeader">
-    <img href="index.html" class="logo" src="/media/logo.png">
-
+    <img href="index.html" class="logo" src="/media/logo.svg">
+    
     <nav>
       <!--Yoinked from: https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
       <input type="checkbox" id="check">
@@ -21,7 +22,7 @@
       <div class="nav-mobile">
         <a href="index.html">Home</a>
         <a href="#">Accesability</a>
-        <a href="#">GitHub</a>
+        <a href="pages/github.html">GitHub</a>
         <a href="#">Activity</a>
       </div>
     </nav>
@@ -34,8 +35,8 @@
   </div>
 
   <div class="bottomHeader">
-    <a href="index.html" class="studieoversikt">&lt; -Studieoversikt</a>
-
+    <a href="index.html" class="studieoversikt">&lt; Studieoversikt</a>
+    
   </div>
 
 </header>
@@ -46,7 +47,7 @@
 
 
   <section>
-    <iframe src="media/video_hd.mp4" frameborder="0" id="promo-video"></iframe>
+    <iframe src="media/video_hd.mp4" frameborder="0" id="promo_video" controls></iframe>
     <h1 id="title">Matematisk modellering og datavitenskap – ingeniør</h1>
     <h2 id="sub-title">Bachelorprogram</h2>
   </section>
@@ -1056,35 +1057,36 @@
 
 </body>
 
-<footer>
-
+<footer role="contentinfo">
   <div class="footer-container">
     <!-- Contact Information -->
     <div class="footer-section contact-info">
-      <h3>Contact Us</h3>
-      <p>OsloMet University</p>
-      <p>Phone: +47 123 45 678</p>
-      <p>Email: info@oslomet.no</p>
+      <h3>Kontakt oss</h3>
+      <address>
+        <p>OsloMet University</p>
+        <p>Telefon: <a href="tel:+4712345678">+47 123 45 678</a></p>
+        <p>E-post: <a href="mailto:info@oslomet.no">info@oslomet.no</a></p>
+      </address>
     </div>
 
     <!-- Quick Links -->
     <div class="footer-section quick-links">
-      <h3>Quick Links</h3>
+      <h3>Raske lenker</h3>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#heading-info">Program Info</a></li>
-        <li><a href="#promo-video">Watch Video</a></li>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#heading_info">Program Info</a></li>
+        <li><a href="#promo_video">Se video</a></li>
         <li><a href="https://www.github.com/">GitHub</a></li>
       </ul>
     </div>
 
     <!-- Social Media Links -->
     <div class="footer-section social-media">
-      <h3>Follow Us</h3>
+      <h3>Følg oss</h3>
       <ul>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://www.twitter.com/">Twitter</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" aria-label="Følg oss på Facebook">Facebook</a></li>
+        <li><a href="https://www.twitter.com/" aria-label="Følg oss på Twitter">Twitter</a></li>
+        <li><a href="https://www.instagram.com/" aria-label="Følg oss på Instagram">Instagram</a></li>
       </ul>
     </div>
   </div>
@@ -1095,5 +1097,6 @@
 
 
 </footer>
+
 
 </html>

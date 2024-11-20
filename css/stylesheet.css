@@ -15,10 +15,8 @@ nav {
     background-color: var(--main-colour);
     color: #fff;
     float: right;
-
-}
-
-.checkbtn {
+   }
+   .checkbtn {
     font-size: 1.5rem;
     color: black;
     cursor: pointer;
@@ -26,7 +24,9 @@ nav {
 
 .nav-mobile {
     display: none;
-}
+    border: solid;
+    border-color: black;
+   }
 
 #check {
     display: none;
@@ -84,7 +84,8 @@ header {
     text-decoration: none;
     color: black;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: bold; 
+    cursor: pointer;
 }
 
 .studieoversikt {
@@ -122,6 +123,7 @@ a {
 
 #title {
     margin-left: 5%;
+    padding: 0;
     font-size: 3em;
 }
 
@@ -749,4 +751,80 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     /* Underline on hover for emphasis */
+}
+
+/* Remove bullets and reset list styling */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Keep list items stacked vertically */
+.footer-section ul li {
+    margin-bottom: 8px; 
+}
+
+/* Footer container styling */
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #ffd500;
+    color: black; 
+}
+
+/* Header styling for each footer section */
+.footer-section h3 {
+    color: black; 
+    margin-bottom: 10px;
+}
+
+/* Footer link styling */
+.footer-section ul li a {
+    color: black; 
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    /* Denne burde kanskje fikses opp i, elementene blir usynlig når du hoverer*/
+    color: #FFD700; /* Changed color on hover for visibility */
+}
+
+/* Footer bottom section styling */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffd500;
+    color: black; 
+}
+
+.testP{
+    width: 100%;
+}
+.githubCommit{
+    margin-left: 2em;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 5em;
+}
+.h1Github{
+    text-align: center;
+}
+.h2Github{
+    text-align: center;
+}
+.pGithub{
+    margin: 3em;
+}
+
+
+.githubCommitsFirstPicture{
+    width: 600px;
+}
+.githubSecondPicture{
+    width: 600px;
 }
