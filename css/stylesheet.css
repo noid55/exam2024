@@ -1,18 +1,18 @@
 :root {
-    --main_colour: #ffd500;
-    --background_colour: #ffffff;
-    --text_colour: #000000;
-    --box_text_background: #f0eded4f;
-  }
+    --main-colour: #ffd500;
+    --background-colour: #ffffff;
+    --text-colour: #000000;
+    --box-text-background: #f0eded4f;
+}
 
 body {
     margin: 0;
-    
+
 }
 
 nav {
     /* padding: 1.5rem 2rem; */
-    background-color: var(--main_colour);
+    background-color: var(--main-colour);
     color: #fff;
     float: right;
    }
@@ -20,46 +20,47 @@ nav {
     font-size: 1.5rem;
     color: black;
     cursor: pointer;
-   }
-   .nav-mobile {
+}
+
+.nav-mobile {
     display: none;
     border: solid;
     border-color: black;
    }
 
-   #check{
+#check {
     display: none;
-  }
-   #check:checked ~ .nav-mobile {
+}
+
+#check:checked~.nav-mobile {
     display: block;
-    position: absolute;
-    right: 14em;
-    margin-top: 5px;
-   }
-   .nav-mobile {
-    position: absolute;
+}
+
+.nav-mobile {
+    /* position: absolute; */
     top: 4.5rem;
-    /* left: 0; */
-    background: var(--main_colour);
+    left: 0;
+    background: var(--main-colour);
     z-index: 1;
     width: 200px;
     float: left;
-   }
-   .nav-mobile a {
+}
+
+.nav-mobile a {
     color: black;
     padding: 1rem 1.5rem;
     display: block;
-    right: 0;
-   }
-   .menuText{
+}
+
+.menuText {
     display: inline;
     font-size: 0.9em;
     font-weight: bold;
     color: black;
-   }
+}
 
-header{
-    background-color: var(--main_colour);
+header {
+    background-color: var(--main-colour);
     margin: 0;
     border: 0;
     padding-top: 3%;
@@ -68,18 +69,18 @@ header{
     height: 10em;
 }
 
-.topHeader{
-   
+.topHeader {
+
     margin: 0;
 }
 
-.bottomHeader{
+.bottomHeader {
     display: inline;
 }
 
 
-.logo{
-    
+.logo {
+
     text-decoration: none;
     color: black;
     font-size: 2em;
@@ -87,7 +88,7 @@ header{
     cursor: pointer;
 }
 
-.studieoversikt{
+.studieoversikt {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -95,69 +96,85 @@ header{
     top: 2em;
 }
 
-h1, h2, h3, h4, h5, p, a {
-    font-family: Moderat,Avenir,Helvetica,Arial,sans-serif;
-    color: var(--text_colour);
+h1 {
+    font-size: large;
+    padding-left: 10px;
 }
-#promo_video {
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    color: var(--text-colour);
+}
+
+#promo-video {
     margin-top: 5%;
     width: 100%;
     height: 400px;
     border-style: none;
-    
+
 }
+
 #title {
     margin-left: 5%;
     padding: 0;
     font-size: 3em;
 }
 
-#sub_title {
+#sub-title {
     margin-left: 5%;
     font-weight: 450;
 }
 
-#heading_section, #heading_info_section {
+#heading-section,
+#heading-info-section {
     margin: 0 12.5% 0 12.5%;
 }
 
-.program_info_header {
+.program-info-header {
     margin-top: 15%;
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 0;
 }
 
-.program_info_info {
+.program-info-info {
     margin-top: 0;
     font-size: 1em;
     font-weight: 400;
 }
 
-.program_info_list_item {
+.program-info-list-item {
     border-color: black;
     border-width: 1px;
-    width: 230px; /*THIS NEEDS TO BE CHANGED TO CA. THE SIZE OF THE WIDEST LIST ITEM ELEMENT */
+    width: 230px;
+    /*THIS NEEDS TO BE CHANGED TO CA. THE SIZE OF THE WIDEST LIST ITEM ELEMENT */
     border-width: 1px 0 0 0;
     border-style: solid;
     margin: 1%;
 }
 
-#introduction_speech {
+#introduction-speech {
     margin: 5% 30% 5% 30%;
     font-size: 1.6em;
 }
 
-.program_info_list {
+.program-info-list {
     display: flex;
-    
+
     list-style: none;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     flex-direction: row;
 
     margin-left: 10%;
     margin-right: 10%;
-    
+
     border-style: outset;
     border-width: 0 0 1px 0;
     border-color: rgba(0, 0, 0, 0.154);
@@ -167,60 +184,61 @@ h1, h2, h3, h4, h5, p, a {
 
 /*PHONE SCREEN*/
 @media only screen and (max-width: 768px) {
-    #promo_video {
+    #promo-video {
         height: 300px;
     }
 }
 
 /*LAPTOP*/
 @media only screen and (min-width: 769px) {
-    #promo_video {
+    #promo-video {
         height: 600px;
     }
 }
 
-/*2 boxes*/
+/*2 short information boxes*/
 
 
-#bold_text{
+.bold-text {
     text-decoration: none;
     font-weight: bold;
     font-size: 1em;
 }
-#bold_text:hover{
-    border-bottom: 0.15em solid var(--main_colour);
-}
-#bold_title{
-    text-decoration: none;
-    font-weight: bold;
+
+.bold-text:hover {
+    border-bottom: 0.15em solid var(--main-colour);
 }
 
-.flex-container_2_boxes{
+.container-2-boxes {
     display: flex;
-    justify-content: space-evenly; 
-    margin-bottom: 4em;   
+    justify-content: space-evenly;
+    margin-bottom: 4em;
     font-size: 1.1em;
 }
-.box-wraper{
+
+.box-wraper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.box1, .box2{
-    background-color: var(--main_colour);
-    width: 18em;
+
+#box-1-and-2 {
+    background-color: var(--main-colour);
+    width: 20em;
     height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
 }
-.box1 p, .box2 p{
+
+#box-1-and-2 p {
     margin: 0;
 }
 
-.content-item1, .content-item2{
-    background-color: var(--box_text_background);
+.content-item1,
+.content-item2 {
+    background-color: var(--box-text-background);
     width: 30em;
     height: 28em;
     padding: 0.8em;
@@ -229,31 +247,41 @@ h1, h2, h3, h4, h5, p, a {
     flex-direction: column;
     justify-content: center;
     border-radius: 0.2em;
-    border: 0.1em solid var(--main_colour);
+    border: 0.1em solid var(--main-colour);
 }
-.content-item1 p, .content-item2 p {
-    margin: 0 0 1.3em 0;
+
+.content-item1 p,
+.content-item2 p {
+    margin: 0 0 1.5em 0;
+    line-height: 1.5em;
 }
-.content-item1 li, .content-item2 li{
+
+.content-item1 li,
+.content-item2 li {
     text-align: left;
     margin-bottom: 0.5em;
     font-size: 1.1em;
 }
-.content-item1 ul, .content-item2 ul{
-    margin-bottom: 1em;
-    
+
+.content-item1 ul,
+.content-item2 ul {
+    margin-bottom: 1.5em;
+
 }
 
-/* 1 long box */
 
-.container_long_box{
+/* 1 information long box */
+
+.container-long-box {
     display: flex;
-    justify-content: space-evenly; 
-    margin-bottom: 4em;   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
     font-size: 1.1em;
 }
-.long_box{
-    background-color: var(--main_colour);
+
+.long-box {
+    background-color: var(--main-colour);
     width: 30em;
     height: 4em;
     display: flex;
@@ -261,28 +289,276 @@ h1, h2, h3, h4, h5, p, a {
     align-items: center;
     border-radius: 0.2em;
 }
-.long_box p{
+
+.long-box p {
     margin: 0;
 }
-.content-item_long_box{
-    background-color: var(--box_text_background);
-    width: 60em;
-    height: 20em;
+
+.section-content {
+    background-color: var(--box-text-background);
+    width: auto;
+    height: auto;
     padding: 0.8em;
+    margin: 0 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-radius: 0.2em;
-    border: 0.1em solid var(--main_colour);
+    border: 0.1em solid var(--main-colour);
 }
-.content-item_long_box p {
-    margin: 0 0 1em 0;
+
+.section-content p {
+    line-height: 1.5em;
 }
+
+/*Styles for li in long boxes*/
+
+.container-long-box li {
+
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    list-style: none;
+}
+
+.container-long-box ul {
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+.section-content h4 {
+    margin-top: 1em;
+}
+
+/* Layout for study years boxes */
+
+.study-years {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1em;
+    margin: 0.5em;
+    color: white;
+    border-radius: 0.5em;
+    background-color: #e2e2e0;
+}
+
+
+
+.box h4 {
+    text-align: center;
+}
+
+.box h5,
+.box p {
+    margin: 2em 0;
+    text-align: left;
+
+}
+
+/* legend (color marking) for every subjects */
+#legend {
+    text-align: left;
+}
+
+.color-code {
+    color: black;
+    position: relative;
+    margin-bottom: 0.8em;
+}
+
+.color-code-explanation-text {
+    font-size: 1em;
+}
+
+.color-stripe-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0.7em;
+}
+
+/*What it does: looks inside #legend and finds all children with color-code class and adds styles */
+#legend .color-code:nth-child(1) .color-stripe-side::before {
+    background-color: rgb(0, 3, 182);
+}
+
+#legend .color-code:nth-child(2) .color-stripe-side::before {
+    background-color: rgb(255, 0, 0);
+}
+
+#legend .color-code:nth-child(3) .color-stripe-side::before {
+    background-color: rgb(0, 3, 182);
+}
+
+#legend .color-code:nth-child(4) .color-stripe-side::before {
+    background-color: rgb(255, 0, 0);
+}
+
+#legend .color-code:nth-child(5) .color-stripe-side::before {
+    background-color: rgb(236, 154, 0);
+}
+
+#legend .color-code:nth-child(3) .color-stripe-side::before,
+#legend .color-code:nth-child(4) .color-stripe-side::before {
+    top: 0;
+    height: 50%;
+}
+
+#legend .color-code:nth-child(3) .color-stripe-side::after,
+#legend .color-code:nth-child(4) .color-stripe-side::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50%;
+    width: 0.7em;
+}
+
+#legend .color-code:nth-child(3) .color-stripe-side::after,
+#legend .color-code:nth-child(4) .color-stripe-side::after {
+    background-color: rgb(0, 136, 0);
+}
+
+
+/* styles subject boxes that has course name, course code and points, adds color-marking and makes it box looking */
+
+.subjects-obligatory-1st-half,
+.subjects-obligatory-2nd-half,
+.subjects-obligatory-1st-half-extra-sub,
+.subjects-obligatory-2nd-half-extra-sub {
+    border-top: 0.15em solid black;
+    margin: 0.7em 0 0.7em 0;
+    color: black;
+    width: 100%;
+    position: relative;
+}
+
+.subjects-obligatory-1st-half::before,
+.subjects-obligatory-2nd-half::before,
+.subjects-obligatory-1st-half-extra-sub::before,
+.subjects-obligatory-2nd-half-extra-sub::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0.5em;
+}
+
+.subjects-obligatory-1st-half::before,
+.subjects-obligatory-1st-half-extra-sub::before {
+    background-color: rgb(0, 3, 182);
+}
+
+.subjects-obligatory-2nd-half::before,
+.subjects-obligatory-2nd-half-extra-sub::before {
+    background-color: rgb(255, 0, 0);
+}
+
+.subjects-obligatory-1st-half-extra-sub::before,
+.subjects-obligatory-2nd-half-extra-sub::before {
+    top: 0;
+    height: 50%;
+}
+
+.subjects-obligatory-1st-half-extra-sub::after,
+.subjects-obligatory-2nd-half-extra-sub::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    height: 50%;
+    right: 0;
+    width: 0.5em;
+}
+
+.subjects-obligatory-1st-half-extra-sub::after,
+.subjects-obligatory-2nd-half-extra-sub::after {
+    background-color: rgb(0, 136, 0);
+}
+
+
+
+.bold-text-subjects {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+.subjects-obligatory-1st-half .bold-text-subjects:hover {
+    border-bottom: 0.15em solid rgb(0, 3, 182);
+}
+
+.subjects-obligatory-2nd-half .bold-text-subjects:hover {
+    border-bottom: 0.15em solid rgb(255, 0, 0);
+}
+
+.subjects-obligatory-1st-half-extra-sub .bold-text-subjects:hover,
+.subjects-obligatory-2nd-half-extra-sub .bold-text-subjects:hover {
+    border-bottom: 0.15em solid rgb(0, 136, 0);
+}
+
+/* Places course name in center*/
+
+.subjects-obligatory-1st-half .top-course-name,
+.subjects-obligatory-2nd-half .top-course-name,
+.subjects-obligatory-1st-half-extra-sub .top-course-name,
+.subjects-obligatory-2nd-half-extra-sub .top-course-name {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.8em;
+    width: 100%;
+}
+
+/* Places course info and splits two other classes with space between */
+
+.subjects-obligatory-1st-half .bottom-course-info,
+.subjects-obligatory-2nd-half .bottom-course-info,
+.subjects-obligatory-1st-half-extra-sub .bottom-course-info,
+.subjects-obligatory-2nd-half-extra-sub .bottom-course-info {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Places course code to left side */
+
+
+.subjects-obligatory-1st-half .bottom-course-info .course-code,
+.subjects-obligatory-2nd-half .bottom-course-info .course-code,
+.subjects-obligatory-1st-half-extra-sub .course-code,
+.subjects-obligatory-2nd-half-extra-sub .course-code {
+    text-align: left;
+}
+
+/* Places course points to right side */
+
+.subjects-obligatory-1st-half .bottom-course-info .points,
+.subjects-obligatory-2nd-half .bottom-course-info .points,
+.subjects-obligatory-1st-half-extra-sub .bottom-course-info .points,
+.subjects-obligatory-2nd-half-extra-sub .bottom-course-info .points {
+    text-align: right;
+    margin-right: 0.7em;
+}
+
 
 /* standalone button for further education */
 
-.further_education{
+.further-education {
     display: flex;
     justify-content: center;
 }
@@ -295,12 +571,150 @@ h1, h2, h3, h4, h5, p, a {
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #ecc501;
     transform: scale(1.01);
 }
+
+/* Tablet Screen (Laptop and Tablets) */
+@media (max-width: 1200px) {
+    .container-2-boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    
+    .container-long-box {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .section-content {
+        padding: 0 1em;
+        margin: 0 1em; /* HUSK Å GJØRE SAMME PÅ 2 BOXES  */
+    }
+
+
+
+    .study-years {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+
+    .study-years {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns */
+        gap: 1.5em;
+    }
+
+    .box {
+        margin: 0.5em 0;
+        /* Add margin to space out columns if needed */
+    }
+
+    .color-code-explanation-text {
+        font-size: 1em;
+    }
+
+    .bold-text-subjects {
+        font-size: 0.9em;
+    }
+
+    /*h4 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: 0.95em;
+    }*/
+
+    .further-education{
+        padding: 16px 24px;
+    }
+}
+
+
+/* Mobile Screen (Phones) */
+@media (max-width: 768px) {
+    
+    .topHeader{
+        width: 100%;
+    }
+
+    .container-long-box {
+        margin: 1em;
+    }
+
+    .study-years {
+        grid-template-columns: 1fr; /* sinlge col layout */
+    }
+
+    .long-box {
+        width: 20em;
+        height: 4em;
+    }
+
+    .section-content {
+        font-size: 1em;
+        margin: 0 1em;
+        padding: 0 1em; /*  ensure no overflow */
+        box-sizing: border-box; /*  padding is included in the width it prevents overflow*/
+    }
+
+    /*#legend {
+        font-size: 0.75em;
+    }*/
+
+    .color-code-explanation-text {
+        font-size: 1em;
+    }
+
+    .study-years {
+        margin: auto;
+    }
+
+    .box {
+        width: 100%; /* so it takes up full width of its container */
+        padding: 1em;
+        box-sizing: border-box;  /*  padding is included in the width it prevents overflow*/
+
+    }
+
+
+
+    .bold-text-subjects {
+        font-size: 0.8em;
+    }
+
+    /*h4 {
+        font-size: 1.5em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }*/
+
+    .top-course-name {
+        font-size: 1em;
+    }
+
+    .bottom-course-info .points,
+    .bottom-course-info .course-code {
+        font-size: 1em;
+    }
+
+    .further-education{
+        padding: 16px 24px;
+    }
+}
+
 
 /* footer */
 
@@ -308,27 +722,34 @@ h1, h2, h3, h4, h5, p, a {
 /**/
 
 footer {
-    background-color: var(--main_colour); 
-    padding: 1.5em 10%; 
-    color: var(--text_colour); 
+    background-color: var(--main-colour);
+    /* Matches header background */
+    padding: 1.5em 10%;
+    /* Matches header padding for left/right */
+    color: var(--text-colour);
+    /* Matches main text color */
     text-align: center;
     font-size: 1em;
-    margin-top: 3em; 
+    margin-top: 3em;
+    /* Adds spacing above the footer */
 }
 
 footer p {
-    margin: 0.5em 0; 
+    margin: 0.5em 0;
+    /* Small spacing between footer text */
     font-weight: 500;
 }
 
 footer a {
-    color: var(--text_colour); 
-    text-decoration: none; 
+    color: var(--text-colour);
+    /* Matches text color */
+    text-decoration: none;
+    /* No underline for a clean look */
     font-weight: bold;
 }
 
 footer a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
     /* Underline on hover for emphasis */
 }
 
