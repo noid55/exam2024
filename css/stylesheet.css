@@ -629,6 +629,10 @@ a {
     h5 {
         font-size: 0.95em;
     }
+
+    .further-education{
+        padding: 16px 24px;
+    }
 }
 
 
@@ -695,6 +699,10 @@ a {
     .bottom-course-info .points,
     .bottom-course-info .course-code {
         font-size: 1em;
+    }
+
+    .further-education{
+        padding: 16px 24px;
     }
 }
 
