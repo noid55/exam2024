@@ -364,9 +364,6 @@ footer a:hover {
     text-decoration: none;
 }
 
-.footer-section ul li a:hover {
-    color: #FFD700; /* Changed color on hover for visibility */
-}
 
 /* Footer bottom section styling */
 .footer-bottom {
