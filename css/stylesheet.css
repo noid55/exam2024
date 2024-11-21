@@ -120,17 +120,18 @@ a {
 
 }
 
+#sub-title {
+    font-weight: 450;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 #title {
-    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 0;
     font-size: 3em;
 }
-
-#sub-title {
-    margin-left: 5%;
-    font-weight: 450;
-}
-
 #heading-section,
 #heading-info-section {
     margin: 0 12.5% 0 12.5%;
