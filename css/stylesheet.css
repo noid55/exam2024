@@ -13,8 +13,9 @@ body {
 nav {
     color: #fff;
     float: right;
-   }
-   .checkbtn {
+}
+
+.checkbtn {
     font-size: 1.5rem;
     color: black;
     cursor: pointer;
@@ -27,11 +28,10 @@ nav {
 
 #check:checked~.nav-mobile {
     display: block;
-    
+
 }
 
 .nav-mobile {
-    
     position: absolute;
     display: none;
     border: solid;
@@ -81,7 +81,7 @@ header {
     text-decoration: none;
     color: black;
     font-size: 2em;
-    font-weight: bold; 
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -113,15 +113,17 @@ a {
 
 }
 
-#title {
-    margin-left: 5%;
-    padding: 0;
-    font-size: 3em;
+#sub-title {
+    font-weight: 450;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-#sub-title {
-    margin-left: 5%;
-    font-weight: 450;
+#title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 3em;
 }
 
 #heading-section,
@@ -194,7 +196,6 @@ a {
 .bold-text {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1em;
 }
 
 .bold-text:hover {
@@ -205,7 +206,11 @@ a {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 4em;
-    font-size: 1.1em;
+
+}
+
+.container-2-boxes p {
+    font-size: 1em;
 }
 
 .box-wraper {
@@ -214,9 +219,9 @@ a {
     align-items: center;
 }
 
-#box-1-and-2 {
+#box-1-and-2-tittle {
     background-color: var(--main-colour);
-    width: 20em;
+    width: 24em;
     height: 4em;
     display: flex;
     justify-content: center;
@@ -224,8 +229,8 @@ a {
     border-radius: 0.2em;
 }
 
-#box-1-and-2 p {
-    margin: 0;
+#box-1-and-2-tittle p {
+    margin: 0.5em;
 }
 
 .content-item1,
@@ -244,7 +249,6 @@ a {
 
 .content-item1 p,
 .content-item2 p {
-    margin: 0 0 1.5em 0;
     line-height: 1.5em;
 }
 
@@ -253,6 +257,11 @@ a {
     text-align: left;
     margin-bottom: 0.5em;
     font-size: 1.1em;
+}
+
+.content-item1 li .bold-text,
+.content-item2 li .bold-text {
+    font-size: 0.9em;
 }
 
 .content-item1 ul,
@@ -274,7 +283,7 @@ a {
 
 .long-box {
     background-color: var(--main-colour);
-    width: 30em;
+    width: 38em;
     height: 4em;
     display: flex;
     justify-content: center;
@@ -487,7 +496,8 @@ a {
     text-decoration: none;
     font-weight: bold;
     font-size: 0.8em;
-    padding: 0.2em;
+    padding: 0.8em;
+
 }
 
 .subjects-obligatory-1st-half .bold-text-subjects:hover {
@@ -509,7 +519,6 @@ a {
 .subjects-obligatory-2nd-half .top-course-name,
 .subjects-obligatory-1st-half-extra-sub .top-course-name,
 .subjects-obligatory-2nd-half-extra-sub .top-course-name {
-    font-weight: bold;
     text-align: center;
     margin-bottom: 0.8em;
     width: 100%;
@@ -574,139 +583,154 @@ a {
 
 /* Tablet Screen (Laptop and Tablets) */
 @media (max-width: 1200px) {
-    .container-2-boxes{
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-    }
-    
-    
+
+    /* long boxes */
+
     .container-long-box {
-        display: flex;
         flex-direction: row;
+        display: flex;
         gap: 2em;
     }
 
     .section-content {
         padding: 0 1em;
-        margin: 0 1em; /* HUSK Å GJØRE SAMME PÅ 2 BOXES  */
-    }
-
-
-
-    .study-years {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5em;
+        margin: 0 1em;
+        box-sizing: border-box;
     }
 
     .study-years {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Two columns */
+        /* Two columns for laptop/tablet screens */
         gap: 1.5em;
     }
 
     .box {
         margin: 0.5em 0;
-        /* Add margin to space out columns if needed */
-    }
-
-    .color-code-explanation-text {
-        font-size: 1em;
-    }
-
-    .bold-text-subjects {
-        font-size: 0.9em;
-    }
-
-    /*h4 {
-        font-size: 1em;
-    }
-
-    h5 {
-        font-size: 0.95em;
-    }*/
-
-    .further-education{
-        padding: 16px 24px;
-    }
-}
-
-
-/* Mobile Screen (Phones) */
-@media (max-width: 768px) {
-    
-    .topHeader{
-        width: 100%;
-    }
-
-    .container-long-box {
-        margin: 1em;
-    }
-
-    .study-years {
-        grid-template-columns: 1fr; /* sinlge col layout */
+        /* Space out individual boxes */
     }
 
     .long-box {
-        width: 20em;
-        height: 4em;
+        width: 60%;
+        /* Adjust width for readability */
+        height: auto;
+        /* Ensure dynamic height based on content */
+        margin-top: 1em;
+        /* Add spacing from top */
+    }
+
+    /* short boxes */
+
+    .container-2-boxes {
+        flex-direction: column;
+        align-items: center;
+        /* Center align the stacked boxes */
+        gap: 2em;
+        /* Add space between the boxes */
+        margin-bottom: 2em;
+    }
+
+    .box-wraper {
+        width: 100%;
+        /* Adjust width to fit parent container */
+    }
+
+    .content-item1,
+    .content-item2 {
+        width: 80%;
+        /* Reduce width to fit smaller screens */
+        margin: auto;
+        /* Center content */
+    }
+
+    #box-1-and-2-tittle {
+        width: 60%;
+    }
+
+    .container-2-boxes p {
+        font-size: 1.1em;
+    }
+
+    .content-item1 li,
+    .content-item2 li {
+        font-size: 1.1em;
+    }
+
+}
+
+/* Mobile Screen (Phones) */
+@media (max-width: 768px) {
+
+    /* long boxes */
+
+    .container-long-box {
+        flex-direction: row;
+        display: flex;
+        margin: 0em;
+        /* Remove excess margins for smaller screens */
     }
 
     .section-content {
         font-size: 1em;
         margin: 0 1em;
-        padding: 0 1em; /*  ensure no overflow */
-        box-sizing: border-box; /*  padding is included in the width it prevents overflow*/
-    }
-
-    /*#legend {
-        font-size: 0.75em;
-    }*/
-
-    .color-code-explanation-text {
-        font-size: 1em;
+        padding: 0 1em;
+        box-sizing: border-box;
+        /* Ensure no overflow */
     }
 
     .study-years {
+        grid-template-columns: 1fr;
+        /* Single-column layout for small screens */
         margin: auto;
+        /* Center content */
     }
 
-    .box {
-        width: 100%; /* so it takes up full width of its container */
+    .long-box {
+        width: 60%;
+        /* Keep a consistent width */
+        height: 4em;
+        /* Define a fixed height */
+        margin-top: 1em;
+        /* Add spacing from the top */
+    }
+
+    /* short boxes */
+    .container-2-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        /* Slightly reduce space between boxes */
+        margin-top: 1em;
+    }
+
+    .box-wraper {
+        width: 100%;
+    }
+
+    .content-item1,
+    .content-item2 {
+        width: 90%;
+        /* Narrower width for mobile */
         padding: 1em;
-        box-sizing: border-box;  /*  padding is included in the width it prevents overflow*/
+        /* Adjust padding for smaller screens */
+    }
 
+    #box-1-and-2-tittle {
+        width: 70%;
     }
 
 
-
-    .bold-text-subjects {
-        font-size: 0.8em;
-    }
-
-    /*h4 {
-        font-size: 1.5em;
-    }
-
-    h5 {
-        font-size: 1em;
-    }*/
-
-    .top-course-name {
+    .container-2-boxes p {
         font-size: 1em;
     }
 
-    .bottom-course-info .points,
-    .bottom-course-info .course-code {
-        font-size: 1em;
+    .content-item1 li,
+    .content-item2 li {
+        font-size: 1.1em;
     }
 
-    .further-education{
-        padding: 16px 24px;
-    }
 }
+
 
 
 /* footer */
@@ -755,34 +779,35 @@ footer a:hover {
 
 /* Keep list items stacked vertically */
 .footer-section ul li {
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
 }
 
 /* Footer container styling */
 .footer-container {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
     background-color: #ffd500;
-    color: black; 
+    color: black;
 }
 
 /* Header styling for each footer section */
 .footer-section h3 {
-    color: black; 
+    color: black;
     margin-bottom: 10px;
 }
 
 /* Footer link styling */
 .footer-section ul li a {
-    color: black; 
+    color: black;
     text-decoration: none;
 }
 
 .footer-section ul li a:hover {
     /* Denne burde kanskje fikses opp i, elementene blir usynlig når du hoverer*/
-    color: #FFD700; /* Changed color on hover for visibility */
+    color: #FFD700;
+    /* Changed color on hover for visibility */
 }
 
 /* Footer bottom section styling */
@@ -790,13 +815,14 @@ footer a:hover {
     text-align: center;
     padding: 10px;
     background-color: #ffd500;
-    color: black; 
+    color: black;
 }
 
-.testP{
+.testP {
     width: 100%;
 }
-.githubCommit{
+
+.githubCommit {
     margin-left: 2em;
     display: flex;
     align-content: center;
@@ -804,20 +830,52 @@ footer a:hover {
     flex-grow: 1;
     gap: 5em;
 }
-.h1Github{
+
+.h1Github {
     text-align: center;
 }
-.h2Github{
+
+.h2Github {
     text-align: center;
 }
-.pGithub{
+
+.pGithub {
     margin: 3em;
 }
 
 
-.githubCommitsFirstPicture{
+.githubCommitsFirstPicture {
     width: 600px;
 }
-.githubSecondPicture{
+
+.githubSecondPicture {
     width: 600px;
+}
+
+/* Activity page specials */
+#article-heading-image {
+    width: 100%;
+}
+
+/* Controls the width of all reading content on the pages */
+/* PHONE */
+.width-controller {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* LAPTOP */
+@media (min-width: 600px) and (max-width: 1599px) {
+    .width-controller {
+        width: 80%;
+    }
+}
+
+/* WIDE-SCREEN */
+@media (min-width: 1600px) {
+    .width-controller {
+        width: 1200px;
+    }
 }
