@@ -865,3 +865,24 @@ footer a:hover {
         width: 1200px;
     }
 }
+
+/* Controls the width of all reading content on the pages */
+/* PHONE */
+.sub-width-controller {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* I've split up LAPTOP and WIDE-SCREEN pointers even though they contain the same just for easier accessibility if there were a need to change them individually */
+/* LAPTOP */
+@media (min-width: 600px) and (max-width: 1599px) {
+    .sub-width-controller {
+        width: 90%;
+    }
+}
+/* WIDE-SCREEN */
+@media (min-width: 1600px) {
+    .sub-width-controller {
+        width: 90%;
+    }
+}
