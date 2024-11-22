@@ -237,6 +237,7 @@ a {
 .content-item2 {
     background-color: var(--box-text-background);
     width: 30em;
+    height: 28em;
     padding: 0.8em;
     text-align: center;
     display: flex;
