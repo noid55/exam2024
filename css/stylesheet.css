@@ -125,6 +125,12 @@ a {
     padding: 0;
     font-size: 3em;
 }
+/* Fixes text overflowing the page on mobile phones */
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5em;
+    }
+}
 
 #heading-section,
 #heading-info-section {
