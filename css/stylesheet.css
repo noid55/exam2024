@@ -166,10 +166,8 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
 
-    margin-left: auto;
-    margin-right: auto;
-
-    padding: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 
     border-style: outset;
     border-width: 0 0 1px 0;
