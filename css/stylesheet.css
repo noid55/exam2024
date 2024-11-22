@@ -752,86 +752,71 @@ a {
 
 footer {
     background-color: var(--main-colour);
-    /* Matches header background */
-    padding: 1.5em 10%;
-    /* Matches header padding for left/right */
-    color: var(--text-colour);
-    /* Matches main text color */
+    padding: 1.5em 10%; /* Matches header padding for left/right */
+    color: var(--text-colour); /* Matches main text color */
     text-align: center;
-    font-size: 1em;
-    margin-top: 3em;
-    /* Adds spacing above the footer */
+    font-size: 1em;  /* Set font-size in em */
+    margin-top: 3em; /* Adds spacing above the footer */
 }
 
 footer p {
-    margin: 0.5em 0;
-    /* Small spacing between footer text */
+    margin: 0.5em 0; /* Small spacing between footer text */
     font-weight: 500;
 }
 
 footer a {
-    color: var(--text-colour);
-    /* Matches text color */
-    text-decoration: none;
-    /* No underline for a clean look */
+    color: var(--text-colour); /* Matches text color */
+    text-decoration: none; /* No underline for a clean look */
     font-weight: bold;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    /* Underline on hover for emphasis */
+    text-decoration: underline; /* Underline on hover for emphasis */
 }
 
-/* Remove bullets and reset list styling */
 .footer-section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-/* Keep list items stacked vertically */
 .footer-section ul li {
-    margin-bottom: 8px;
+    margin-bottom: 0.5em; /* Converted margin to em */
 }
 
-/* Footer container styling */
 .footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 1.25em;  /* Converted padding to em */
     background-color: #ffd500;
     color: black;
 }
 
-/* Header styling for each footer section */
 .footer-section h3 {
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em; /* Converted margin to em */
 }
 
-/* Footer link styling */
 .footer-section ul li a {
     color: black;
     text-decoration: none;
 }
 
 .footer-section ul li a:hover {
-    color: #FF6347;
+    color: #FF6347; /* Changed color on hover for visibility */
     text-decoration: underline;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    /* Changed color on hover for visibility */
-    text-decoration: underline;
+    transition: all 0.3s ease-in-out; /* Changed color on hover for visibility */
 }
 
-/* Footer bottom section styling */
 .footer-bottom {
     text-align: center;
-    padding: 10px;
+    padding: 0.625em; /* Converted padding to em */
     background-color: #ffd500;
     color: black;
 }
+
 
 
 .testP {
