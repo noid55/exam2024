@@ -11,8 +11,6 @@ body {
 }
 
 nav {
-    /* padding: 1.5rem 2rem; */
-    background-color: var(--main-colour);
     color: #fff;
     float: right;
    }
@@ -22,11 +20,6 @@ nav {
     cursor: pointer;
 }
 
-.nav-mobile {
-    display: none;
-    border: solid;
-    border-color: black;
-   }
 
 #check {
     display: none;
@@ -34,16 +27,20 @@ nav {
 
 #check:checked~.nav-mobile {
     display: block;
+    
 }
 
 .nav-mobile {
-    /* position: absolute; */
+    
+    position: absolute;
+    display: none;
+    border: solid;
+    border-color: black;
     top: 4.5rem;
-    left: 0;
     background: var(--main-colour);
     z-index: 1;
     width: 200px;
-    float: left;
+    right: 15%;
 }
 
 .nav-mobile a {
@@ -66,7 +63,7 @@ header {
     padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
-    height: 10em;
+    height: 8em;
 }
 
 .topHeader {
@@ -94,11 +91,6 @@ header {
     font-weight: bold;
     position: relative;
     top: 2em;
-}
-
-h1 {
-    font-size: large;
-    padding-left: 10px;
 }
 
 
