@@ -801,8 +801,10 @@ footer a:hover {
 }
 
 .footer-section ul li a:hover {
-    /* Denne burde kanskje fikses opp i, elementene blir usynlig når du hoverer*/
-    color: #FFD700;
+    color: #FF6347;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
     /* Changed color on hover for visibility */
 }
 
@@ -813,6 +815,7 @@ footer a:hover {
     background-color: #ffd500;
     color: black;
 }
+
 
 .testP {
     width: 100%;
