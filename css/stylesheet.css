@@ -217,9 +217,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-#box-1-and-2-tittle {
+.box-1-and-2-tittle {
     background-color: var(--main-colour);
     width: 24em;
     height: 4em;
@@ -227,10 +228,12 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
+    
 }
 
-#box-1-and-2-tittle p {
+.box-1-and-2-tittle p {
     margin: 0.5em;
+    
 }
 
 .content-item1,
@@ -289,6 +292,7 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
+    text-align: center;
 }
 
 .long-box p {
@@ -564,7 +568,7 @@ a {
     justify-content: center;
 }
 
-.btn {
+#btn {
     background-color: #ffd500;
     border: 0.1em solid black;
     padding: 18px 32px;
@@ -576,7 +580,7 @@ a {
     text-decoration: none;
 }
 
-.btn:hover {
+#btn:hover {
     background-color: #ecc501;
     transform: scale(1.01);
 }
@@ -595,7 +599,7 @@ a {
     .section-content {
         padding: 0 1em;
         margin: 0 1em;
-        box-sizing: border-box;
+        box-sizing: border-box; /*??*/
     }
 
     .study-years {
@@ -607,7 +611,7 @@ a {
 
     .box {
         margin: 0.5em 0;
-        /* Space out individual boxes */
+        /* Space out boxes */
     }
 
     .long-box {
@@ -643,7 +647,7 @@ a {
         /* Center content */
     }
 
-    #box-1-and-2-tittle {
+    .box-1-and-2-tittle {
         width: 60%;
         text-align: center;
     }
@@ -689,8 +693,7 @@ a {
     .long-box {
         width: 60%;
         /* Keep a consistent width */
-        height: 4em;
-        /* Define a fixed height */
+        height: auto;
         margin-top: 1em;
         /* Add spacing from the top */
     }
@@ -715,10 +718,9 @@ a {
         /* Narrower width for mobile */
         padding: 1em;
         /* Adjust padding for smaller screens */
-        height: auto;
     }
 
-    #box-1-and-2-tittle {
+    .box-1-and-2-tittle {
         width: 70%;
         text-align: center;
     }
