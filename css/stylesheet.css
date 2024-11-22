@@ -817,6 +817,26 @@ footer a:hover {
     color: black;
 }
 
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 1em 5%; /* Smaller padding for mobile */
+        font-size: 0.9em; /* Smaller font size for mobile */
+        margin-top: 2em; /* Reduce top margin for mobile */
+    }
+
+    .footer-container {
+        padding: 1em; /* Smaller padding for the container on mobile */
+    }
+
+    .footer-section h3 {
+        margin-bottom: 0.5em; /* Adjust the spacing for mobile */
+    }
+
+    .footer-bottom {
+        padding: 0.5em; /* Smaller padding for mobile footer bottom */
+    }
+}
 
 
 .testP {
