@@ -11,8 +11,6 @@ body {
 }
 
 nav {
-    /* padding: 1.5rem 2rem; */
-    background-color: var(--main-colour);
     color: #fff;
     float: right;
 }
@@ -23,11 +21,6 @@ nav {
     cursor: pointer;
 }
 
-.nav-mobile {
-    display: none;
-    border: solid;
-    border-color: black;
-}
 
 #check {
     display: none;
@@ -35,16 +28,19 @@ nav {
 
 #check:checked~.nav-mobile {
     display: block;
+
 }
 
 .nav-mobile {
-    /* position: absolute; */
+    position: absolute;
+    display: none;
+    border: solid;
+    border-color: black;
     top: 4.5rem;
-    left: 0;
     background: var(--main-colour);
     z-index: 1;
     width: 200px;
-    float: left;
+    right: 15%;
 }
 
 .nav-mobile a {
@@ -67,7 +63,7 @@ header {
     padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
-    height: 10em;
+    height: 8em;
 }
 
 .topHeader {
@@ -95,10 +91,6 @@ header {
     font-weight: bold;
     position: relative;
     top: 2em;
-}
-
-h1 {
-    font-size: large;
 }
 
 
@@ -133,6 +125,13 @@ a {
     padding: 0;
     font-size: 3em;
 }
+/* Fixes text overflowing the page on mobile */
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5em;
+    }
+}
+
 #heading-section,
 #heading-info-section {
     margin: 0 12.5% 0 12.5%;
@@ -224,9 +223,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-#box-1-and-2-tittle {
+.box-1-and-2-tittle {
     background-color: var(--main-colour);
     width: 24em;
     height: 4em;
@@ -234,10 +234,12 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
+    
 }
 
-#box-1-and-2-tittle p {
+.box-1-and-2-tittle p {
     margin: 0.5em;
+    
 }
 
 .content-item1,
@@ -296,6 +298,7 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
+    text-align: center;
 }
 
 .long-box p {
@@ -571,7 +574,7 @@ a {
     justify-content: center;
 }
 
-.btn {
+#btn {
     background-color: #ffd500;
     border: 0.1em solid black;
     padding: 18px 32px;
@@ -583,7 +586,7 @@ a {
     text-decoration: none;
 }
 
-.btn:hover {
+#btn:hover {
     background-color: #ecc501;
     transform: scale(1.01);
 }
@@ -602,7 +605,7 @@ a {
     .section-content {
         padding: 0 1em;
         margin: 0 1em;
-        box-sizing: border-box;
+        box-sizing: border-box; /*??*/
     }
 
     .study-years {
@@ -614,7 +617,7 @@ a {
 
     .box {
         margin: 0.5em 0;
-        /* Space out individual boxes */
+        /* Space out boxes */
     }
 
     .long-box {
@@ -630,33 +633,40 @@ a {
 
     .container-2-boxes {
         flex-direction: column;
-        align-items: center; /* Center align the stacked boxes */
-        gap: 2em; /* Add space between the boxes */
+        align-items: center;
+        /* Center align the stacked boxes */
+        gap: 2em;
+        /* Add space between the boxes */
         margin-bottom: 2em;
     }
 
     .box-wraper {
-        width: 100%; /* Adjust width to fit parent container */
+        width: 100%;
+        /* Adjust width to fit parent container */
     }
 
     .content-item1,
     .content-item2 {
-        width: 80%; /* Reduce width to fit smaller screens */
-        margin: auto; /* Center content */
+        width: 80%;
+        /* Reduce width to fit smaller screens */
+        margin: auto;
+        /* Center content */
     }
 
-    #box-1-and-2-tittle{
+    .box-1-and-2-tittle {
         width: 60%;
+        text-align: center;
     }
 
     .container-2-boxes p {
         font-size: 1.1em;
     }
+
     .content-item1 li,
     .content-item2 li {
         font-size: 1.1em;
     }
-    
+
 }
 
 /* Mobile Screen (Phones) */
@@ -689,8 +699,7 @@ a {
     .long-box {
         width: 60%;
         /* Keep a consistent width */
-        height: 4em;
-        /* Define a fixed height */
+        height: auto;
         margin-top: 1em;
         /* Add spacing from the top */
     }
@@ -699,7 +708,8 @@ a {
     .container-2-boxes {
         flex-direction: column;
         align-items: center;
-        gap: 1.5em; /* Slightly reduce space between boxes */
+        gap: 1.5em;
+        /* Slightly reduce space between boxes */
         margin-top: 1em;
     }
 
@@ -709,17 +719,23 @@ a {
 
     .content-item1,
     .content-item2 {
-        width: 90%; /* Narrower width for mobile */
-        padding: 1em; /* Adjust padding for smaller screens */
-    }
-    #box-1-and-2-tittle{
-        width: 70%;
+        width: 90%;
+        height: auto;
+        /* Narrower width for mobile */
+        padding: 1em;
+        /* Adjust padding for smaller screens */
     }
 
-    
+    .box-1-and-2-tittle {
+        width: 70%;
+        text-align: center;
+    }
+
+
     .container-2-boxes p {
         font-size: 1em;
     }
+
     .content-item1 li,
     .content-item2 li {
         font-size: 1.1em;
@@ -806,6 +822,7 @@ footer a:hover {
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     /* Changed color on hover for visibility */
+    text-decoration: underline;
 }
 
 /* Footer bottom section styling */
@@ -876,5 +893,26 @@ footer a:hover {
 @media (min-width: 1600px) {
     .width-controller {
         width: 1200px;
+    }
+}
+
+/* Controls the width of all reading content on the pages */
+/* PHONE */
+.sub-width-controller {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* I've split up LAPTOP and WIDE-SCREEN pointers even though they contain the same just for easier accessibility if there were a need to change them individually */
+/* LAPTOP */
+@media (min-width: 600px) and (max-width: 1599px) {
+    .sub-width-controller {
+        width: 90%;
+    }
+}
+/* WIDE-SCREEN */
+@media (min-width: 1600px) {
+    .sub-width-controller {
+        width: 90%;
     }
 }
