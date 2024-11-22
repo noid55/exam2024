@@ -645,6 +645,7 @@ a {
 
     #box-1-and-2-tittle {
         width: 60%;
+        text-align: center;
     }
 
     .container-2-boxes p {
@@ -714,6 +715,7 @@ a {
         /* Narrower width for mobile */
         padding: 1em;
         /* Adjust padding for smaller screens */
+        height: auto;
     }
 
     #box-1-and-2-tittle {
