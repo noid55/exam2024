@@ -923,14 +923,13 @@ footer a:hover {
     width: 70%;
 }
 
-.githubCommit,
-githu {
+.githubCommit {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     flex-grow: 1;
-    margin: 0 auto;
+    margin: 0;
     gap: 5em;
 }
 
@@ -944,7 +943,7 @@ githu {
 
 
 .pGithub {
-    margin: 3em;
+    margin: 2em;
     text-align: center;
     
 }
@@ -959,12 +958,6 @@ githu {
     height: 30%;
 }
 
-@media (max-width: 768px) {
-    .picturesGithub {
-        height: 30%;
-        width: 70%;
-    }
-}
 
 /* Activity page specials */
 #article-heading-image {
