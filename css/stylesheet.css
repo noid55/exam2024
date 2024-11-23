@@ -48,12 +48,19 @@ nav {
     padding: 1rem 1.5rem;
     display: block;
 }
+.nav-mobile a.active {
+    text-decoration: underline;
+}
 
 .menuText {
     display: inline;
     font-size: 0.9em;
     font-weight: bold;
     color: black;
+}
+
+.nav-mobile a {
+    text-decoration: none;
 }
 
 header {
@@ -163,6 +170,13 @@ a {
 #introduction-speech {
     margin: 5% 30% 5% 30%;
     font-size: 1.6em;
+}
+
+/* Fixes text margin on phone */
+@media (max-width: 768px) {
+    #introduction-speech {
+        margin: 10% 5% 5% 5%
+    }
 }
 
 .program-info-list {
@@ -689,6 +703,11 @@ a {
         /* Ensure no overflow */
     }
 
+    /* Makes the listed item inheret the text size from section-content div*/
+    .section-content li {
+        font-size: inherit;
+    }
+
     .study-years {
         grid-template-columns: 1fr;
         /* Single-column layout for small screens */
@@ -725,6 +744,7 @@ a {
         padding: 1em;
         /* Adjust padding for smaller screens */
     }
+    
 
     .box-1-and-2-tittle {
         width: 70%;
