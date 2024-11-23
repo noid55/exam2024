@@ -863,34 +863,44 @@ footer a:hover {
     width: 100%;
 }
 
-.githubCommit {
-    margin-left: 2em;
+.githubCommit, githu{
     display: flex;
-    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     flex-grow: 1;
+    margin: 0 auto;
     gap: 5em;
 }
 
 .h1Github {
     text-align: center;
 }
-
-.h2Github {
+.h2Github{
     text-align: center;
 }
 
+
 .pGithub {
     margin: 3em;
+    text-align: center;
+    
+    align-items: center;
 }
 
 
-.githubCommitsFirstPicture {
+.githubFlex {
     width: 600px;
 }
-
-.githubSecondPicture {
+.picturesGithub{
     width: 600px;
+    height: 300px;
+}
+@media (max-width: 768px) {
+    .picturesGithub {
+        height: 30%;
+        width: 70%;
+    }
 }
 
 /* Activity page specials */
