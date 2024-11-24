@@ -6,30 +6,34 @@
   <title>Accessability</title>
   <link rel="stylesheet" href="../css/stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
-<header>
+<header class="header">
   <div class="topHeader">
     <a href="../index.html"><img class="logo" src="../media/logo.svg" alt="Logo OsloMET-home"></a>
     
     <nav>
-      <!--Yoinked from: https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e -->
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
+      <!--Inspired by from: https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e 
+        We make a checkbox that is hidden to mimic the function of a proper hamburger menu without using js. The label for attribute makes it so whenever you click on it's contents
+         (meny text and icon) you interract with the checkbox -->
+      <input type="checkbox" id="check" aria-label="Toggle menu" tabindex="0">
+      <label for="check" class="checkbtn" tabindex="0">
         <p class="menuText">Meny</p>
         <i class="fas fa-bars"></i>
       </label>
-      <div class="nav-mobile">
-        <a href="../index.html">Home</a>
-        <a href="accesability.html" class="active">Accesability</a>
-        <a href="github.html">GitHub</a>
-        <a href="activity.html">Activity</a>
+      <div class="nav-mobile" role="navigation" aria-label="Main menu">
+        <a href="../index.html" tabindex="0">Home</a>
+        <a href="accesability.html" class="active" tabindex="0">Accesability</a>
+        <a href="github.html" tabindex="0">GitHub</a>
+        <a href="activity.html" tabindex="0">Activity</a>
       </div>
     </nav>
 
 
 
 
-    <!-- <a href="index.html" class="logo">Oslo <br>Met</a> -->
+   
 
   </div>
 
@@ -41,9 +45,17 @@
 
 <body>
 
-<h1>This is the activity page</h1>
-
-
+  <section class="width-controller">
+    <section>
+    <h1 class="h1Github">Accessability</h1>
+    <p><a class="aAccessability" href="https://lovdata.no/dokument/NL/lov/2017-06-16-51">Accessability is mandated by law in Norway.</a> 
+      As such there are certain standards that needs to be upheld for our page design. Currently lighthouse seems to think our site is upholding accessability standards quite well.
+    However lighthouse can miss some things. </p>
+    <img class="picturesPages" src="../media/accessability-lighthouse.webp" alt="A picture of a lighthouse accessability test">
+    
+      
+  </section>
+  </section>
 </body>
 
 <footer>
