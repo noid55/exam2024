@@ -1,3 +1,5 @@
+/*General styles*/
+
 :root {
     --main-colour: #ffd500;
     --background-colour: #ffffff;
@@ -7,7 +9,17 @@
 
 body {
     margin: 0;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    color: var(--text-colour);
 }
 
 nav {
@@ -101,18 +113,6 @@ nav {
     top: 2em;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a {
-    font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    color: var(--text-colour);
-}
-
 .promo-video {
     margin-top: 5%;
     width: 100%;
@@ -135,11 +135,7 @@ a {
 }
 
 /* Fixes text overflowing the page on mobile */
-@media (max-width: 768px) {
-    .title {
-        font-size: 1.5em;
-    }
-}
+
 
 .heading-section,
 .heading-info-section {
@@ -174,12 +170,7 @@ a {
     font-size: 1.6em;
 }
 
-/* Fixes text margin on phone */
-@media (max-width: 768px) {
-    #introduction-speech {
-        margin: 10% 5% 5% 5%
-    }
-}
+
 
 .program-info-list {
     display: flex;
@@ -198,19 +189,7 @@ a {
 
 }
 
-/*PHONE SCREEN*/
-@media only screen and (max-width: 768px) {
-    .promo-video {
-        height: 300px;
-    }
-}
 
-/*LAPTOP*/
-@media only screen and (min-width: 769px) {
-    .promo-video {
-        height: 600px;
-    }
-}
 
 /*-------------2 short information boxes-------------------------------*/
 
@@ -218,12 +197,13 @@ a {
 .bold-text {
     text-decoration: none;
     font-weight: bold;
+    border-bottom: 0.15em solid var(--main-colour);
 }
 
 /*colored underline, under bold text*/
 
 .bold-text:hover {
-    border-bottom: 0.15em solid var(--main-colour);
+    border-bottom: 0.15em solid black;
 }
 
 /*container for 2 boxes, spaced evenly*/
@@ -646,6 +626,308 @@ a {
     /*increase button size when hovering over*/
 }
 
+
+
+
+
+/* footer */
+
+
+/**/
+
+/* Footer container */
+footer {
+    background-color: var(--main-colour);
+    /* Sets background color to main color */
+    padding: 1.5em 10%;
+    /* Adds padding to match header's padding */
+    color: var(--text-colour);
+    /* Sets text color to match main text color */
+    text-align: center;
+    /* Centers text inside footer */
+    font-size: 1em;
+    /* Sets font size for readability */
+    margin-top: 3em;
+    /* Adds space above footer */
+}
+
+/* Footer text */
+footer p {
+    margin: 0.5em 0;
+    /* Small vertical spacing between paragraphs */
+    font-weight: 500;
+    /* Sets medium font weight for footer text */
+}
+
+/* Footer links */
+footer a {
+    color: var(--text-colour);
+    /* Ensures link text matches main text color */
+    text-decoration: none;
+    /* Removes underline for clean look */
+    font-weight: bold;
+    /* Makes links bold for emphasis */
+}
+
+/* Hover effect on footer links */
+footer a:hover {
+    text-decoration: underline;
+    /* Adds underline on hover for visibility */
+}
+
+/* Footer list styling */
+.footer-section ul {
+    list-style-type: none;
+    /* Removes bullet points from list */
+    padding: 0;
+    /* Removes default padding */
+    margin: 0;
+    /* Removes default margin */
+}
+
+/* Spacing for list items inside footer */
+.footer-section ul li {
+    margin-bottom: 0.5em;
+    /* Small spacing between list items */
+}
+
+/* Footer container for multiple sections */
+.footer-container {
+    display: flex;
+    /* Uses flexbox for layout */
+    justify-content: space-around;
+    /* Distributes sections evenly */
+    flex-wrap: wrap;
+    /* Allows wrapping for smaller screens */
+    padding: 1.25em;
+    /* Adds padding inside footer container */
+    background-color: #ffd500;
+    /* Sets background color to match main color */
+    color: black;
+    /* Sets text color to black */
+}
+
+/* Footer section header */
+.footer-section h3 {
+    color: black;
+    /* Sets header text color to black */
+    margin-bottom: 0.625em;
+    /* Adds spacing below the header */
+}
+
+/* Links inside footer section */
+.footer-section ul li a {
+    color: black;
+    /* Sets link color to black */
+    text-decoration: none;
+    /* Removes underline from links */
+}
+
+/* Hover effect for links inside footer section */
+.footer-section ul li a:hover {
+    color: #FF6347;
+    /* Changes link color to orange-red on hover */
+    text-decoration: underline;
+    /* Underlines link on hover */
+    font-weight: bold;
+    /* Makes link bold on hover */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    /* Centers text in footer bottom */
+    padding: 0.625em;
+    /* Adds padding to footer bottom */
+    background-color: #ffd500;
+    /* Matches footer background color */
+    color: black;
+    /* Sets text color to black */
+}
+
+
+/* ================================
+   Mobile Adjustments
+   ================================ */
+
+
+
+
+.pPages {
+    width: 70%;
+}
+
+.pagesFlex {
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 0;
+    gap: 1em;
+}
+
+.h1Pages {
+    text-align: center;
+}
+
+
+.h2Pages,
+.h3Pages {
+    display: block;
+    width: 100%;
+}
+
+
+.pGithub {
+    margin: 2em;
+    text-align: center;
+
+}
+
+
+
+.picturesPages {
+    width: 70%;
+    height: 30%;
+}
+.picturesPagesSmaller {
+    width: 50%;
+    height: 30%;
+}
+
+
+
+/* Activity page specials */
+.article-heading-image {
+    width: 100%;
+}
+
+/* Contains the images inside the sub-width-controller on the activity page */
+.pictures-activity-page {
+    max-width: 100%;
+}
+
+.aAccessability {
+    all: revert;
+}
+
+
+
+.under-dropdown-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.under-dropdown-section ul {
+    list-style: none;
+    padding: 0;
+}
+.faglig-leder ul {
+    display: flex;
+}
+
+.under-dropdown-section img {
+    max-height: 120px;
+    margin-right: 10px;
+}
+
+.under-dropdown-section h3 {
+    margin: auto;
+}
+.under-dropdown-section h2 {
+    margin-top: 40px;
+}
+.under-dropdown-section a {
+    font-weight: bolder;
+    text-decoration-color: var(--main-colour);
+}
+.under-dropdown-section a:hover {
+    text-decoration-color: var(--text-colour);
+}
+
+.faglig-leder, .lignende-fag{
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: rgba(0, 0, 0, 0.154);
+}
+.lignende-fag li {
+    margin-bottom: 10px;
+}
+
+
+/*----------MEDIA QUERY BODY-----------*/
+
+/* WIDTH CONTROL */
+
+/* WIDE SCREEN */
+.width-controller {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.sub-width-controller {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* LAPTOP */
+@media /* (min-width: 769px) and */(max-width: 1599px) {
+    .width-controller {
+        width: 80%;
+    }
+
+    .sub-width-controller {
+        width: 90%;
+    }
+}
+/* PHONE */
+@media (max-width: 768px) {
+    .width-controller {
+        width: 90%;
+        
+    }
+
+    .sub-width-controller {
+        width: 95%;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5em;
+    }
+}
+
+/* Fixes text margin on phone */
+@media (max-width: 768px) {
+    #introduction-speech {
+        margin: 10% 5% 5% 5%
+    }
+}
+
+/*VIDEO*/
+
+/*PHONE SCREEN*/
+@media only screen and (max-width: 768px) {
+    .promo-video {
+        height: 300px;
+    }
+}
+
+/*LAPTOP*/
+@media only screen and (min-width: 769px) {
+    .promo-video {
+        height: 600px;
+    }
+}
+
+
 /* Laptop and Tablet screen */
 @media (max-width: 1200px) {
 
@@ -825,128 +1107,7 @@ a {
 }
 
 
-
-/* footer */
-
-
-/**/
-
-/* Footer container */
-footer {
-    background-color: var(--main-colour);
-    /* Sets background color to main color */
-    padding: 1.5em 10%;
-    /* Adds padding to match header's padding */
-    color: var(--text-colour);
-    /* Sets text color to match main text color */
-    text-align: center;
-    /* Centers text inside footer */
-    font-size: 1em;
-    /* Sets font size for readability */
-    margin-top: 3em;
-    /* Adds space above footer */
-}
-
-/* Footer text */
-footer p {
-    margin: 0.5em 0;
-    /* Small vertical spacing between paragraphs */
-    font-weight: 500;
-    /* Sets medium font weight for footer text */
-}
-
-/* Footer links */
-footer a {
-    color: var(--text-colour);
-    /* Ensures link text matches main text color */
-    text-decoration: none;
-    /* Removes underline for clean look */
-    font-weight: bold;
-    /* Makes links bold for emphasis */
-}
-
-/* Hover effect on footer links */
-footer a:hover {
-    text-decoration: underline;
-    /* Adds underline on hover for visibility */
-}
-
-/* Footer list styling */
-.footer-section ul {
-    list-style-type: none;
-    /* Removes bullet points from list */
-    padding: 0;
-    /* Removes default padding */
-    margin: 0;
-    /* Removes default margin */
-}
-
-/* Spacing for list items inside footer */
-.footer-section ul li {
-    margin-bottom: 0.5em;
-    /* Small spacing between list items */
-}
-
-/* Footer container for multiple sections */
-.footer-container {
-    display: flex;
-    /* Uses flexbox for layout */
-    justify-content: space-around;
-    /* Distributes sections evenly */
-    flex-wrap: wrap;
-    /* Allows wrapping for smaller screens */
-    padding: 1.25em;
-    /* Adds padding inside footer container */
-    background-color: #ffd500;
-    /* Sets background color to match main color */
-    color: black;
-    /* Sets text color to black */
-}
-
-/* Footer section header */
-.footer-section h3 {
-    color: black;
-    /* Sets header text color to black */
-    margin-bottom: 0.625em;
-    /* Adds spacing below the header */
-}
-
-/* Links inside footer section */
-.footer-section ul li a {
-    color: black;
-    /* Sets link color to black */
-    text-decoration: none;
-    /* Removes underline from links */
-}
-
-/* Hover effect for links inside footer section */
-.footer-section ul li a:hover {
-    color: #FF6347;
-    /* Changes link color to orange-red on hover */
-    text-decoration: underline;
-    /* Underlines link on hover */
-    font-weight: bold;
-    /* Makes link bold on hover */
-    transition: all 0.3s ease-in-out;
-    /* Smooth transition for hover effect */
-}
-
-/* Footer bottom section */
-.footer-bottom {
-    text-align: center;
-    /* Centers text in footer bottom */
-    padding: 0.625em;
-    /* Adds padding to footer bottom */
-    background-color: #ffd500;
-    /* Matches footer background color */
-    color: black;
-    /* Sets text color to black */
-}
-
-
-/* ================================
-   Mobile Adjustments
-   ================================ */
+/*------------------MEDIA QUERY FOOTER-------------*/
 
 /* Adjust footer layout for mobile */
 @media (max-width: 768px) {
@@ -979,143 +1140,5 @@ footer a:hover {
 }
 
 
-.pPages {
-    width: 70%;
-}
-
-.pagesFlex {
-    display: flex;
-    /* justify-content: center; */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    margin: 0;
-    gap: 1em;
-}
-
-.h1Pages {
-    text-align: center;
-}
 
 
-.h2Pages,
-.h3Pages {
-    display: block;
-    width: 100%;
-}
-
-
-.pGithub {
-    margin: 2em;
-    text-align: center;
-
-}
-
-
-
-.picturesPages {
-    width: 70%;
-    height: 30%;
-}
-.picturesPagesSmaller {
-    width: 50%;
-    height: 30%;
-}
-
-
-
-/* Activity page specials */
-.article-heading-image {
-    width: 100%;
-}
-
-/* Contains the images inside the sub-width-controller on the activity page */
-.pictures-activity-page {
-    max-width: 100%;
-}
-
-.aAccessability {
-    all: revert;
-}
-
-
-
-.under-dropdown-section {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
-
-.under-dropdown-section ul {
-    list-style: none;
-    padding: 0;
-}
-.faglig-leder ul {
-    display: flex;
-}
-
-.under-dropdown-section img {
-    max-height: 120px;
-    margin-right: 10px;
-}
-
-.under-dropdown-section h3 {
-    margin: auto;
-}
-.under-dropdown-section h2 {
-    margin-top: 40px;
-}
-.under-dropdown-section a {
-    font-weight: bolder;
-    text-decoration-color: var(--main-colour);
-}
-.under-dropdown-section a:hover {
-    text-decoration-color: var(--text-colour);
-}
-
-.faglig-leder, .lignende-fag{
-    border-style: solid;
-    border-width: 1px 0px 1px 0px;
-    border-color: rgba(0, 0, 0, 0.154);
-}
-.lignende-fag li {
-    margin-bottom: 10px;
-}
-
-
-/* WIDTH CONTROL */
-
-/* WIDE SCREEN */
-.width-controller {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-.sub-width-controller {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* LAPTOP */
-@media /* (min-width: 769px) and */(max-width: 1599px) {
-    .width-controller {
-        width: 80%;
-    }
-
-    .sub-width-controller {
-        width: 90%;
-    }
-}
-/* PHONE */
-@media (max-width: 768px) {
-    .width-controller {
-        width: 90%;
-        
-    }
-
-    .sub-width-controller {
-        width: 95%;
-        
-    }
-}
