@@ -113,7 +113,7 @@ a {
     color: var(--text-colour);
 }
 
-#promo-video {
+.promo-video {
     margin-top: 5%;
     width: 100%;
     height: 400px;
@@ -121,13 +121,13 @@ a {
 
 }
 
-#sub-title {
+.sub-title {
     font-weight: 450;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-#title {
+.title {
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 0;
@@ -136,13 +136,13 @@ a {
 
 /* Fixes text overflowing the page on mobile */
 @media (max-width: 768px) {
-    #title {
+    .title {
         font-size: 1.5em;
     }
 }
 
-#heading-section,
-#heading-info-section {
+.heading-section,
+.heading-info-section {
     margin: 0 12.5% 0 12.5%;
 }
 
@@ -200,14 +200,14 @@ a {
 
 /*PHONE SCREEN*/
 @media only screen and (max-width: 768px) {
-    #promo-video {
+    .promo-video {
         height: 300px;
     }
 }
 
 /*LAPTOP*/
 @media only screen and (min-width: 769px) {
-    #promo-video {
+    .promo-video {
         height: 600px;
     }
 }
@@ -963,10 +963,11 @@ footer a:hover {
 
 
 /* Activity page specials */
-#article-heading-image {
+.article-heading-image {
     width: 100%;
 }
 
+/* Contains the images inside the sub-width-controller on the activity page */
 .pictures-activity-page {
     max-width: 100%;
 }
@@ -976,49 +977,80 @@ footer a:hover {
 
 
 
+.under-dropdown-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 
-/* Controls the width of all reading content on the pages */
-/* PHONE */
+.under-dropdown-section ul {
+    list-style: none;
+    padding: 0;
+}
+.faglig-leder ul {
+    display: flex;
+}
+
+.under-dropdown-section img {
+    max-height: 120px;
+    margin-right: 10px;
+}
+
+.under-dropdown-section h3 {
+    margin: auto;
+}
+.under-dropdown-section h2 {
+    margin-top: 40px;
+}
+.under-dropdown-section a {
+    font-weight: bolder;
+    text-decoration-color: var(--main-colour);
+}
+.under-dropdown-section a:hover {
+    text-decoration-color: var(--text-colour);
+}
+
+.faglig-leder, .lignende-fag{
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: rgba(0, 0, 0, 0.154);
+}
+.lignende-fag li {
+    margin-bottom: 10px;
+}
+
+
+/* WIDTH CONTROL */
+
+/* WIDE SCREEN */
 .width-controller {
-    width: 90%;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
-
-/* LAPTOP */
-@media (min-width: 768px) and (max-width: 1599px) {
-    .width-controller {
-        width: 80%;
-    }
-}
-
-/* WIDE-SCREEN */
-@media (min-width: 1600px) {
-    .width-controller {
-        width: 1200px;
-    }
-}
-
-/* Controls the width of all reading content on the pages */
-/* PHONE */
 .sub-width-controller {
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
-
-/* I've split up LAPTOP and WIDE-SCREEN pointers even though they contain the same just for easier accessibility if there were a need to change them individually */
 /* LAPTOP */
-@media (min-width: 768px) and (max-width: 1599px) {
+@media /* (min-width: 769px) and */(max-width: 1599px) {
+    .width-controller {
+        width: 80%;
+    }
     .sub-width-controller {
         width: 90%;
     }
 }
-
-/* WIDE-SCREEN */
-@media (min-width: 1600px) {
-    .sub-width-controller {
+/* PHONE */
+@media (max-width: 768px) {
+    .width-controller {
         width: 90%;
+        
+    }
+    .sub-width-controller {
+        width: 95%;
+        
     }
 }
