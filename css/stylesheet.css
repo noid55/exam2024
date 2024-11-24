@@ -1,4 +1,4 @@
-/*General styles*/
+/*---------------General styles---------*/
 
 :root {
     --main-colour: #ffd500;
@@ -21,6 +21,8 @@ a {
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
     color: var(--text-colour);
 }
+
+/*------------Header and body---------------------*/
 
 nav {
     color: #fff;
@@ -134,7 +136,7 @@ nav {
     font-size: 3em;
 }
 
-/* Fixes text overflowing the page on mobile */
+
 
 
 .heading-section,
@@ -630,10 +632,8 @@ nav {
 
 
 
-/* footer */
+/*-------- Footer ------------*/
 
-
-/**/
 
 /* Footer container */
 footer {
