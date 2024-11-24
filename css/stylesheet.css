@@ -64,7 +64,7 @@ nav {
     text-decoration: none;
 }
 
-header {
+.header {
     background-color: var(--main-colour);
     margin: 0;
     border: 0;
@@ -951,7 +951,7 @@ footer a:hover {
 
 
 
-.picturesGithub {
+.picturesPages {
     width: 70%;
     height: 30%;
 }
@@ -965,7 +965,9 @@ footer a:hover {
 .pictures-activity-page {
     max-width: 100%;
 }
-
+.aAccessability{
+    all: revert;
+}
 
 
 
