@@ -695,17 +695,49 @@ footer a:hover {
 .footer-container {
     display: flex;
     /* Uses flexbox for layout */
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* Distributes sections evenly */
+    align-items: flex-start; 
+    /*Align sections at the top */
     flex-wrap: wrap;
     /* Allows wrapping for smaller screens */
-    padding: 1.25em;
-    /* Adds padding inside footer container */
+    gap: 1em;
+    /* Added gap for better spacing */
+    max-width: 1200px; 
+    /*Limit width for better allignment*/
+    width: 100%;
+    /*Ensures full width*/
+    margin: 0 auto;
+    /* Center container horizontally*/
+    padding: 1em;
+    /*Adjust padding*/
+    box-sizing: border-box;
+    /*Include padding in width calculation*/
     background-color: #ffd500;
     /* Sets background color to match main color */
     color: black;
     /* Sets text color to black */
 }
+
+.contact-info {
+    max-width: 300px; 
+    /* Restrict width */
+    margin: 0 auto; 
+    /* Center-align content */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 12em; 
+    /* Prevents sections from shrinking too much */
+    max-width: 20em; 
+    /* Prevents sections from growing too wide */
+    text-align: center; 
+    /* Aligns text inside the section */
+    padding: 1em;
+}
+
+
 
 /* Footer section header */
 .footer-section h3 {
@@ -1140,30 +1172,47 @@ footer a:hover {
 /* Adjust footer layout for mobile */
 @media (max-width: 768px) {
     footer {
-        padding: 1em 5%;
+        padding: 1em 5%; 
         /* Reduces padding for mobile screens */
-        font-size: 0.9em;
-        /* Decreases font size for better readability on small screens */
-        margin-top: 2em;
+        font-size: 0.9em; 
+        /* Decreases font size for better readability */
+        margin-top: 2em; 
         /* Reduces top margin on mobile */
     }
 
-
     .footer-container {
-        padding: 1em;
-        /* Adjusts padding for mobile screens */
+        display: grid; 
+        /* Use grid layout for better control */
+        grid-template-columns: repeat(2, 1fr); 
+        /* Two columns */
+        gap: 1em; 
+        /* Adds spacing between grid items */
+        justify-items: center; 
+        /* Centers content horizontally */
+        padding: 1em; 
+        /* Adjust padding for mobile screens */
     }
 
-    /* Adjust header spacing for mobile */
+    /* Ensure last item spans full width if odd number of items */
+    .footer-container .footer-section:last-child {
+        grid-column: span 2; /* Last section takes full width */
+    }
+
+    .footer-section {
+        text-align: center; 
+        /* Center-align content within sections */
+    }
+
     .footer-section h3 {
-        margin-bottom: 0.5em;
-        /* Reduces spacing below headers on mobile */
+        margin-bottom: 0.5em; 
+        /* Reduce spacing below headers */
     }
 
-    /* Adjust footer bottom padding for mobile */
     .footer-bottom {
-        padding: 0.5em;
-        /* Reduces padding in footer bottom for mobile */
+        padding: 0.4em; 
+        /* Reduces padding in footer bottom */
+        font-size: 0.8em; 
+        /* Slightly smaller font for better readability */
     }
 }
 
