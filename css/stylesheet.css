@@ -29,12 +29,15 @@ nav {
     float: right;
 }
 
+/* checkbox and various elemnts for hamburger menu follows here:
+Inspired by/from: https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e 
+          We make a checkbox that is hidden to mimic the function of a proper hamburger menu without using js. The label for attribute makes it so whenever you click on it's contents
+           (meny text and icon) you interract with the checkbox */
 .checkbtn {
     font-size: 1.5rem;
     color: black;
     cursor: pointer;
 }
-
 
 #check {
     display: none;
@@ -167,7 +170,7 @@ nav {
     margin: 1%;
 }
 
-#introduction-speech {
+.introduction-speech {
     margin: 5% 30% 5% 30%;
     font-size: 1.6em;
 }
@@ -786,14 +789,14 @@ footer a:hover {
 
 
 
-
+/* Makes the text fit the pictures */
 .pPages {
     width: 70%;
 }
 
+/* Flexbox for the contents on the other pages */
 .pagesFlex {
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -805,26 +808,18 @@ footer a:hover {
     text-align: center;
 }
 
-
+/* Makes it so the headings don't get jumbled togheter */
 .h2Pages,
 .h3Pages {
-    display: block;
     width: 100%;
 }
 
-
-.pGithub {
-    margin: 2em;
-    text-align: center;
-
-}
-
-
-
+/* Adjusting the size of the pictures on the non-index pages*/
 .picturesPages {
     width: 70%;
     height: 30%;
 }
+
 .picturesPagesSmaller {
     width: 50%;
     height: 30%;
@@ -858,6 +853,7 @@ footer a:hover {
     list-style: none;
     padding: 0;
 }
+
 .faglig-leder ul {
     display: flex;
 }
@@ -870,22 +866,27 @@ footer a:hover {
 .under-dropdown-section h3 {
     margin: auto;
 }
+
 .under-dropdown-section h2 {
     margin-top: 40px;
 }
+
 .under-dropdown-section a {
     font-weight: bolder;
     text-decoration-color: var(--main-colour);
 }
+
 .under-dropdown-section a:hover {
     text-decoration-color: var(--text-colour);
 }
 
-.faglig-leder, .lignende-fag{
+.faglig-leder,
+.lignende-fag {
     border-style: solid;
     border-width: 1px 0px 1px 0px;
     border-color: rgba(0, 0, 0, 0.154);
 }
+
 .lignende-fag li {
     margin-bottom: 10px;
 }
@@ -896,13 +897,15 @@ footer a:hover {
     flex-wrap: wrap;
     list-style: none;
 }
+
 .studenthistorier-section {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.studenthistorier p, h3 {
+.studenthistorier p,
+.studenthistorier h3 {
     width: 90%;
     margin-left: 3%;
     margin-right: 3%;
@@ -930,13 +933,17 @@ footer a:hover {
     margin-right: auto;
     margin-top: 20px;
 }
+
 .sub-width-controller {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* LAPTOP */
-@media /* (min-width: 769px) and */(max-width: 1599px) {
+@media
+/* (min-width: 769px) and */
+(max-width: 1599px) {
     .width-controller {
         width: 80%;
     }
@@ -945,16 +952,17 @@ footer a:hover {
         width: 90%;
     }
 }
+
 /* PHONE */
 @media (max-width: 768px) {
     .width-controller {
         width: 90%;
-        
+
     }
 
     .sub-width-controller {
         width: 95%;
-        
+
     }
 }
 
@@ -966,7 +974,7 @@ footer a:hover {
 
 /* Fixes text margin on phone */
 @media (max-width: 768px) {
-    #introduction-speech {
+    .introduction-speech {
         margin: 10% 5% 5% 5%
     }
 }
@@ -1009,7 +1017,7 @@ footer a:hover {
     /* Two columns instead of 3 for laptop/tablet screens*/
     .study-years {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5em;
     }
 
@@ -1019,42 +1027,52 @@ footer a:hover {
     }
 
     .long-box-tittle {
-        width: 60%; /* Adjusted width adds readability */
-        height: auto; /* dynamic height based on content of each box */
+        width: 60%;
+        /* Adjusted width adds readability */
+        height: auto;
+        /* dynamic height based on content of each box */
         margin-top: 1em;
     }
 
     .bold-text-subjects {
-        font-size: 0.8em; /*reducing font size*/
+        font-size: 0.8em;
+        /*reducing font size*/
         padding: 0.2em;
     }
 
     .bold-text-subjects:hover {
-        text-underline-offset: 0.2em; /* Keeps underline closer to the text*/
+        text-underline-offset: 0.2em;
+        /* Keeps underline closer to the text*/
     }
 
     /*-------------- short boxes -------------*/
 
     /*stacks boxes vertically*/
     .container-2-boxes {
-        flex-direction: column; /*stacks boxes in a column*/
-        align-items: center; /*centeres boxes*/
+        flex-direction: column;
+        /*stacks boxes in a column*/
+        align-items: center;
+        /*centeres boxes*/
         gap: 2em;
         margin-bottom: 2em;
     }
 
     .box-wraper {
-        width: 100%; /* Adjust width to fit parent container */
+        width: 100%;
+        /* Adjust width to fit parent container */
     }
 
     .content-item {
-        width: 80%; /* Reduced width to fit tablet/laptop screen */
+        width: 80%;
+        /* Reduced width to fit tablet/laptop screen */
         margin: auto;
     }
 
     .box-1-and-2-tittle {
-        width: 60%; /* Reduced tittle width to fit tablet/laptop screen */
-        text-align: center; /*makes sure its centered*/ 
+        width: 60%;
+        /* Reduced tittle width to fit tablet/laptop screen */
+        text-align: center;
+        /*makes sure its centered*/
     }
 
     .container-2-boxes p {
@@ -1073,9 +1091,11 @@ footer a:hover {
     /*--------------------- long boxes ---------------*/
 
     .container-long-box {
-        flex-direction: row; /*keeps items in row*/
+        flex-direction: row;
+        /*keeps items in row*/
         display: flex;
-        margin: 0em; /* Remove margins for phone screen */
+        margin: 0em;
+        /* Remove margins for phone screen */
     }
 
     /*adds spacing and changes font size*/
@@ -1092,12 +1112,14 @@ footer a:hover {
 
     /**/
     .study-years {
-        grid-template-columns: 1fr; /* Single column layout for phone screen */
+        grid-template-columns: 1fr;
+        /* Single column layout for phone screen */
         margin: auto;
     }
 
     .long-box-tittle {
-        width: 60%; /* Keeps consistent width */
+        width: 60%;
+        /* Keeps consistent width */
         height: auto;
         margin-top: 1em;
     }
@@ -1106,8 +1128,10 @@ footer a:hover {
     .bold-text-subjects {
         font-size: 0.8em;
         padding: 0.2em;
-        display: inline-block; /*set display to inline-block */
-        width: 80%; /* and then set width to adjust width on mobile to avoid overflow*/
+        display: inline-block;
+        /*set display to inline-block */
+        width: 80%;
+        /* and then set width to adjust width on mobile to avoid overflow*/
     }
 
     /*removes under line from text on phone screen, it happens because we reduce width to zero*/
@@ -1130,7 +1154,7 @@ footer a:hover {
 
     /*----------------- short boxes -----------*/
 
-      /*stacks boxes vertically*/
+    /*stacks boxes vertically*/
     .container-2-boxes {
         flex-direction: column;
         align-items: center;
@@ -1139,13 +1163,16 @@ footer a:hover {
     }
 
     .box-wraper {
-        width: 100%; /* Adjust width to fit parent container */
+        width: 100%;
+        /* Adjust width to fit parent container */
     }
 
     .content-item {
-        width: 90%; /* Reduced width to fit phone screen */
+        width: 90%;
+        /* Reduced width to fit phone screen */
         height: auto;
-        padding: 1em; /*adds better spacing*/
+        padding: 1em;
+        /*adds better spacing*/
     }
 
     /*adjusts tittle for better redeability*/
@@ -1215,7 +1242,3 @@ footer a:hover {
         /* Slightly smaller font for better readability */
     }
 }
-
-
-
-
