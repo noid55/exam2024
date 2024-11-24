@@ -918,26 +918,28 @@ footer a:hover {
 }
 
 
-.testP {
+.pPages {
     width: 70%;
 }
 
-.githubCommit {
+.pagesFlex {
     display: flex;
     /* justify-content: center; */
     align-items: flex-start;
     flex-wrap: wrap;
     flex-grow: 1;
     margin: 0;
-    gap: 5em;
+    gap: 1em;
 }
 
-.h1Github {
+.h1Pages {
     text-align: center;
 }
 
-.h2Github {
-    text-align: center;
+
+.h2Pages, .h3Pages{
+    display: block;
+    width: 100%;
 }
 
 
@@ -948,9 +950,6 @@ footer a:hover {
 }
 
 
-/* .githubFlex {
-    width: 600px;
-} */
 
 .picturesGithub {
     width: 70%;
