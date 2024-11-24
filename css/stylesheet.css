@@ -700,13 +700,13 @@ footer a:hover {
     /* Uses flexbox for layout */
     justify-content: space-evenly;
     /* Distributes sections evenly */
-    align-items: flex-start; 
+    align-items: flex-start;
     /*Align sections at the top */
     flex-wrap: wrap;
     /* Allows wrapping for smaller screens */
     gap: 1em;
     /* Added gap for better spacing */
-    max-width: 1200px; 
+    max-width: 1200px;
     /*Limit width for better allignment*/
     width: 100%;
     /*Ensures full width*/
@@ -723,19 +723,19 @@ footer a:hover {
 }
 
 .contact-info {
-    max-width: 300px; 
+    max-width: 300px;
     /* Restrict width */
-    margin: 0 auto; 
+    margin: 0 auto;
     /* Center-align content */
 }
 
 .footer-section {
     flex: 1;
-    min-width: 8em; 
+    min-width: 8em;
     /* Prevents sections from shrinking too much */
-    max-width: 20em; 
+    max-width: 20em;
     /* Prevents sections from growing too wide */
-    text-align: center; 
+    text-align: center;
     /* Aligns text inside the section */
     padding: 1em;
 }
@@ -942,6 +942,7 @@ footer a:hover {
 
 /* LAPTOP */
 @media
+
 /* (min-width: 769px) and */
 (max-width: 1599px) {
     .width-controller {
@@ -1199,46 +1200,47 @@ footer a:hover {
 /* Adjust footer layout for mobile */
 @media (max-width: 768px) {
     footer {
-        padding: 1em 5%; 
+        padding: 1em 5%;
         /* Reduces padding for mobile screens */
-        font-size: 0.9em; 
+        font-size: 0.9em;
         /* Decreases font size for better readability */
-        margin-top: 2em; 
+        margin-top: 2em;
         /* Reduces top margin on mobile */
     }
 
     .footer-container {
-        display: grid; 
+        display: grid;
         /* Use grid layout for better control */
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         /* Two columns */
-        gap: 1em; 
+        gap: 1em;
         /* Adds spacing between grid items */
-        justify-items: center; 
+        justify-items: center;
         /* Centers content horizontally */
-        padding: 1em; 
+        padding: 1em;
         /* Adjust padding for mobile screens */
     }
 
     /* Ensure last item spans full width if odd number of items */
     .footer-container .footer-section:last-child {
-        grid-column: span 2; /* Last section takes full width */
+        grid-column: span 2;
+        /* Last section takes full width */
     }
 
     .footer-section {
-        text-align: center; 
+        text-align: center;
         /* Center-align content within sections */
     }
 
     .footer-section h3 {
-        margin-bottom: 0.5em; 
+        margin-bottom: 0.5em;
         /* Reduce spacing below headers */
     }
 
     .footer-bottom {
-        padding: 0.4em; 
+        padding: 0.4em;
         /* Reduces padding in footer bottom */
-        font-size: 0.8em; 
+        font-size: 0.8em;
         /* Slightly smaller font for better readability */
     }
 }
