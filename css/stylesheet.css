@@ -963,22 +963,28 @@ footer a:hover {
     width: 100%;
 }
 
+.pictures-activity-page {
+    max-width: 100%;
+}
+
+
+
 
 
 /* Controls the width of all reading content on the pages */
-/* LAPTOP */
-@media (min-width: 768px) and (max-width: 1599px) {
-    .width-controller {
-        width: 80%;
-    }
-}
-
 /* PHONE */
 .width-controller {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+}
+
+/* LAPTOP */
+@media (min-width: 768px) and (max-width: 1599px) {
+    .width-controller {
+        width: 80%;
+    }
 }
 
 /* WIDE-SCREEN */
@@ -991,7 +997,7 @@ footer a:hover {
 /* Controls the width of all reading content on the pages */
 /* PHONE */
 .sub-width-controller {
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
