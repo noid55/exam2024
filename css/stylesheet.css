@@ -963,6 +963,7 @@ footer a:hover {
     width: 100%;
 }
 
+/* Contains the images inside the sub-width-controller on the activity page */
 .pictures-activity-page {
     max-width: 100%;
 }
@@ -971,7 +972,7 @@ footer a:hover {
 
 
 
-/* Controls the width of all reading content on the pages */
+/* Controls the width of all content on the pages */
 /* PHONE */
 .width-controller {
     width: 90%;
@@ -980,10 +981,20 @@ footer a:hover {
     margin-top: 20px;
 }
 
+/* Controls the width of all reading content on the pages */
+.sub-width-controller {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* LAPTOP */
 @media (min-width: 768px) and (max-width: 1599px) {
     .width-controller {
         width: 80%;
+    }
+    .sub-width-controller {
+        width: 90%;
     }
 }
 
@@ -992,26 +1003,6 @@ footer a:hover {
     .width-controller {
         width: 1200px;
     }
-}
-
-/* Controls the width of all reading content on the pages */
-/* PHONE */
-.sub-width-controller {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* I've split up LAPTOP and WIDE-SCREEN pointers even though they contain the same just for easier accessibility if there were a need to change them individually */
-/* LAPTOP */
-@media (min-width: 768px) and (max-width: 1599px) {
-    .sub-width-controller {
-        width: 90%;
-    }
-}
-
-/* WIDE-SCREEN */
-@media (min-width: 1600px) {
     .sub-width-controller {
         width: 90%;
     }
