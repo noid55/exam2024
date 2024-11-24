@@ -136,13 +136,13 @@ a {
 
 /* Fixes text overflowing the page on mobile */
 @media (max-width: 768px) {
-    #title {
+    .title {
         font-size: 1.5em;
     }
 }
 
-#heading-section,
-#heading-info-section {
+.heading-section,
+.heading-info-section {
     margin: 0 12.5% 0 12.5%;
 }
 
@@ -200,14 +200,14 @@ a {
 
 /*PHONE SCREEN*/
 @media only screen and (max-width: 768px) {
-    #promo-video {
+    .promo-video {
         height: 300px;
     }
 }
 
 /*LAPTOP*/
 @media only screen and (min-width: 769px) {
-    #promo-video {
+    .promo-video {
         height: 600px;
     }
 }
@@ -958,7 +958,7 @@ footer a:hover {
 
 
 /* Activity page specials */
-#article-heading-image {
+.article-heading-image {
     width: 100%;
 }
 
