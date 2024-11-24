@@ -955,6 +955,11 @@ footer a:hover {
     width: 70%;
     height: 30%;
 }
+.picturesPagesSmaller {
+    width: 50%;
+    height: 30%;
+}
+
 
 
 /* Activity page specials */

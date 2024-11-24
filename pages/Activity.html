@@ -18,19 +18,18 @@
       <!--Inspired by from: https://mukundkumra.medium.com/create-a-responsive-hamburger-menu-with-html-and-css-a-step-by-step-tutorial-c63e44fcee2e 
         We make a checkbox that is hidden to mimic the function of a proper hamburger menu without using js. The label for attribute makes it so whenever you click on it's contents
          (meny text and icon) you interract with the checkbox -->
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
+      <input type="checkbox" id="check" aria-label="Toggle menu" tabindex="0">
+      <label for="check" class="checkbtn" tabindex="0">
         <p class="menuText">Meny</p>
         <i class="fas fa-bars"></i>
       </label>
-      <div class="nav-mobile">
-        <a href="../index.html">Home</a>
-        <a href="accesability.html">Accesability</a>
-        <a href="github.html">GitHub</a>
-        <a href="activity.html" class="active">Activity</a>
+      <div class="nav-mobile" role="navigation" aria-label="Main menu">
+        <a href="../index.html" tabindex="0">Home</a>
+        <a href="accesability.html"  tabindex="0">Accesability</a>
+        <a href="github.html"  tabindex="0">GitHub</a>
+        <a href="activity.html" class="active" tabindex="0">Activity</a>
       </div>
     </nav>
-    <!-- <a href="index.html" class="logo">Oslo <br>Met</a> -->
   </div>
   <div class="bottomHeader">
     <a href="../index.html" class="studieoversikt">&lt; Studieoversikt</a>
