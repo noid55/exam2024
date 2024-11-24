@@ -731,7 +731,7 @@ footer a:hover {
 
 .footer-section {
     flex: 1;
-    min-width: 12em; 
+    min-width: 8em; 
     /* Prevents sections from shrinking too much */
     max-width: 20em; 
     /* Prevents sections from growing too wide */
